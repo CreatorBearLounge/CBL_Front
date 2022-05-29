@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
-import './app.css';
+// import './app.css';
 import { GlobalStyle } from './styles/global-style';
 import Menu from './components/Organisms/Menu';
 import Nav from './components/Organisms/Nav';
+import Title from './components/Organisms/Title';
 
 const App: React.FC = () => {
   return (
@@ -21,26 +22,104 @@ const App: React.FC = () => {
               <Route path="/" element={<></>} />
               <Route
                 path="/bigminecraftmap"
-                element={<>대규모마인크래프트맵</>}
+                element={
+                  <Title
+                    menuTitle="대규모 마인크래프트 맵"
+                    menuContent="마인크래프트 대규모 맵
+                200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
               />
               <Route
                 path="/bundleandmiddleminecraftmap"
-                element={<>번들 및 중규모 마인크래프트 맵</>}
+                element={
+                  <Title
+                    menuTitle="번들 및 중규모 마인크래프트 맵"
+                    menuContent="마인크래프트 대규모 맵
+            200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
               />
-              <Route path="/music" element={<>음악</>} />
-              <Route path="/backgroundmusic" element={<>배경음악</>} />
-              <Route path="/boxelartworkobj" element={<>복쉘 아트워크 Obj</>} />
-              <Route path="/3dmodeling" element={<>3D 모델링</>} />
+              <Route
+                path="/music"
+                element={
+                  <Title
+                    menuTitle="음악"
+                    menuContent="마인크래프트 대규모 맵
+      200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
+              />
+              <Route
+                path="/backgroundmusic"
+                element={
+                  <Title
+                    menuTitle="배경음악"
+                    menuContent="마인크래프트 대규모 맵
+      200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
+              />
+              <Route
+                path="/boxelartworkobj"
+                element={
+                  <Title
+                    menuTitle="복쉘 아트워크 Obj"
+                    menuContent="마인크래프트 대규모 맵
+      200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
+              />
+              <Route
+                path="/3dmodeling"
+                element={
+                  <Title
+                    menuTitle="3D 모델링"
+                    menuContent="마인크래프트 대규모 맵
+      200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
+              />
               <Route
                 path="/blockbenchmodeling"
-                element={<>블록벤치 모델링</>}
+                element={
+                  <Title
+                    menuTitle="블록벤치 모델링"
+                    menuContent="마인크래프트 대규모 맵
+            200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
               />
-              <Route path="/skinandtexture" element={<>스킨 및 텍스쳐</>} />
+              <Route
+                path="/skinandtexture"
+                element={
+                  <Title
+                    menuTitle="스킨 및 텍스쳐"
+                    menuContent="마인크래프트 대규모 맵
+      200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
+              />
               <Route
                 path="/pluginandserverpack"
-                element={<>플러그인 및 서버팩</>}
+                element={
+                  <Title
+                    menuTitle="플러그인 및 서버팩"
+                    menuContent="마인크래프트 대규모 맵
+            200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
               />
-              <Route path="/font" element={<>폰트</>} />
+              <Route
+                path="/font"
+                element={
+                  <Title
+                    menuTitle="폰트"
+                    menuContent="마인크래프트 대규모 맵
+      200x200 이상 규모의 마인크래프트 맵입니다."
+                  />
+                }
+              />
             </Routes>
           </MainPart>
         </HomeTemplateDiv>
