@@ -128,6 +128,6 @@ const MainPart = styled.div`
 
 const HomeTemplateDiv = styled.div`
   width: 100%;
-  padding-top: 100px;
+  padding-top: 70px;
   height: auto;
 `;
