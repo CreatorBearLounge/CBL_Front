@@ -23,12 +23,15 @@ const Menu: React.FC = () => {
           <MenuItemAtom menuName="음악" menuHref="music" />
         </MenuItemLi>
         <MenuItemLi>
-          <MenuItemAtom menuName="배경음악" menuHref="backgroundmusic" />
+          <MenuItemAtom
+            menuName="효과음과 배경음악"
+            menuHref="soundeffectsandbackgroundmusic"
+          />
         </MenuItemLi>
         <MenuItemLi>
           <MenuItemAtom
-            menuName="복쉘 아트워크 Obj"
-            menuHref="boxelartworkobj"
+            menuName="복쉘 아트워크와 에셋"
+            menuHref="boxelartworkandasset"
           />
         </MenuItemLi>
         <MenuItemLi>
@@ -41,16 +44,10 @@ const Menu: React.FC = () => {
           />
         </MenuItemLi>
         <MenuItemLi>
-          <MenuItemAtom menuName="스킨 및 텍스쳐" menuHref="skinandtexture" />
-        </MenuItemLi>
-        <MenuItemLi>
-          <MenuItemAtom
-            menuName="플러그인 및 서버팩"
-            menuHref="pluginandserverpack"
-          />
-        </MenuItemLi>
-        <MenuItemLi>
           <MenuItemAtom menuName="폰트" menuHref="font" />
+        </MenuItemLi>
+        <MenuItemLi>
+          <MenuItemAtom menuName="VIP 라운지" menuHref="viplounge" />
         </MenuItemLi>
       </ul>
     </MenuDiv>
