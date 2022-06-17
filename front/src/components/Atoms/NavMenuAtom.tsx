@@ -21,7 +21,7 @@ const NavItem = styled.p`
   font-family: 'Noto Sans CJK KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 30px;
   color: #796958;
 `;

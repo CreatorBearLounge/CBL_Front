@@ -31,13 +31,14 @@ export default Nav;
 
 const Header = styled.div`
   width: 100%;
-  height: 100px;
+  height: 4.3%;
   background-color: #ecd9b2;
   position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 19px;
 `;
 
 const MainHeaderText = styled.h1`
@@ -45,7 +46,7 @@ const MainHeaderText = styled.h1`
   font-family: 'Noto Sans CJK KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.5rem;
   line-height: 44px;
   margin-left: 100px;
   color: #796958;
@@ -76,7 +77,7 @@ const ConnectBtn = styled.button`
   font-family: 'Noto Sans CJK KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 0.875rem;
   line-height: 24px;
   color: #796958;
   background-color: #ecd9b2;
