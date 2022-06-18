@@ -8,46 +8,46 @@ interface TitleType {
 
 const Title: React.FC<TitleType> = ({ menuTitle, menuContent }) => {
   return (
-    <>
-      <MainTitle>CREATOR BEAR LOUNGE</MainTitle>
+    <TitleBox>
       <MenuTitle>{menuTitle}</MenuTitle>
       <MenuContent>{menuContent}</MenuContent>
-    </>
+      <MenuLine> </MenuLine>
+    </TitleBox>
   );
 };
 
 export default Title;
 
-const MainTitle = styled.p`
-  width: 358px;
-  font-family: 'Noto Sans CJK KR';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 35.52px;
-  padding-top: 100px;
+const TitleBox = styled.div`
   margin-left: 100px;
-  color: #796958;
 `;
 
 const MenuTitle = styled.h1`
   font-family: 'Noto Sans CJK KR';
   font-style: normal;
+  line-height: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 59.2px;
-  padding-top: 45px;
-  margin-left: 100px;
+  font-size: 1.5rem;
+  padding-top: 10.3%;
   color: #ecd9b2;
+  letter-spacing: -0.48px;
 `;
 
 const MenuContent = styled.p`
   font-family: 'Noto Sans CJK KR';
   font-style: normal;
+  line-height: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20.72px;
-  padding-top: 38px;
-  margin-left: 100px;
-  color: #ecd9b2;
+  font-size: 1em;
+  padding-top: 0.7%;
+  color: #a7a7a7;
+  letter-spacing: -0.32px;
+`;
+
+const MenuLine = styled.div`
+  position: absolute;
+  width: 64.4%;
+  height: 0.1%;
+  background-color: #ecd9b2;
+  margin-top: 1.2%;
 `;
