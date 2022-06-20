@@ -22,7 +22,6 @@ const Nav: React.FC = () => {
             <NavMenuAtom menuName="SHOP" menuHref="shop" />
           </HeaderMenuLi>
         </ul>
-        {/* <ConnectBtn>Connected Wallet</ConnectBtn> */}
         <WalletBtn />
       </HeaderMenuDiv>
     </Header>

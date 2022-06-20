@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { MetaMaskInpageProvider } from '@metamask/providers';
+import axios from 'axios';
 
 declare global {
   interface Window {
@@ -9,8 +10,8 @@ declare global {
 }
 
 const WalletBtn = () => {
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [defaultAccont, setDefaultAccount] = useState<string | null>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const connectWalletHandler = () => {
     if (window.ethereum) {
@@ -22,6 +23,16 @@ const WalletBtn = () => {
     } else {
       setErrorMessage('Install MetaMask');
     }
+
+    axios
+      .post('client/login', JSON.stringify({ defaultAccont }), {
+        headers: {
+          'Content-Type': `application/json`,
+        },
+      })
+      .then((res) => {
+        console.log(res);
+      });
   };
 
   const accountChagedHandler = (
