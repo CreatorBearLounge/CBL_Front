@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import NavMenuAtom from '../Atoms/NavMenuAtom';
+import WalletBtn from '../Atoms/WalletBtn';
 
 const Nav: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ const Nav: React.FC = () => {
             <NavMenuAtom menuName="SHOP" menuHref="shop" />
           </HeaderMenuLi>
         </ul>
-        <ConnectBtn>Connected Wallet</ConnectBtn>
+        <WalletBtn />
       </HeaderMenuDiv>
     </Header>
   );
@@ -68,18 +69,18 @@ const HeaderMenuLi = styled.li`
   margin-left: 60px;
 `;
 
-const ConnectBtn = styled.button`
-  margin-left: 80px;
-  border: 2px solid #796958;
-  border-radius: 30px;
-  width: 200px;
-  height: 50px;
-  font-family: 'Noto Sans CJK KR';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 24px;
-  color: #796958;
-  background-color: #ecd9b2;
-  cursor: pointer;
-`;
+// const ConnectBtn = styled.button`
+//   margin-left: 80px;
+//   border: 2px solid #796958;
+//   border-radius: 30px;
+//   width: 200px;
+//   height: 50px;
+//   font-family: 'Noto Sans CJK KR';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 0.875rem;
+//   line-height: 24px;
+//   color: #796958;
+//   background-color: #ecd9b2;
+//   cursor: pointer;
+// `;
