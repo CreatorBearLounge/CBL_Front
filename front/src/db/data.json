@@ -1,5 +1,5 @@
 {
-  "art": [
+  "arts": [
     {
       "id": 1,
       "title": "산",
@@ -7,7 +7,7 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "front/src/img/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "artist": "반 고흐",
       "date": "22.07.01",
       "description": "사자의 모습입니다.",
-      "thumbnail": "front/src/img/lion.jpg"
+      "thumbnail": "/assets/lion.jpg"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "artist": "홍길동",
       "date": "21.03.04",
       "description": "강아지입니다.",
-      "thumbnail": "front/src/img/dog.jpg"
+      "thumbnail": "/assets/dog.jpg"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "artist": "홍길동",
       "date": "22.05.14",
       "description": "캠핑하는 모습입니다.",
-      "thumbnail": "front/src/img/tent.jpg"
+      "thumbnail": "/assets/tent.jpg"
     }
   ]
 }

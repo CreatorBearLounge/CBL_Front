@@ -5,6 +5,7 @@ import { GlobalStyle } from './styles/global-style';
 import Menu from './components/Organisms/Menu';
 import Nav from './components/Organisms/Nav';
 import Title from './components/Organisms/Title';
+import ThumbnailList from './components/Organisms/ThumbnailList';
 
 const App: React.FC = () => {
   return (
@@ -102,6 +103,7 @@ const App: React.FC = () => {
                 }
               />
             </Routes>
+            <ThumbnailList />
           </MainPart>
         </HomeTemplateDiv>
       </div>

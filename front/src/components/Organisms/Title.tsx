@@ -19,7 +19,7 @@ const Title: React.FC<TitleType> = ({ menuTitle, menuContent }) => {
 export default Title;
 
 const TitleBox = styled.div`
-  margin-left: 100px;
+  margin-left: 20px;
 `;
 
 const MenuTitle = styled.h1`
