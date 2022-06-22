@@ -48,4 +48,18 @@ export const Arts = [
     CountDownload: 1364,
     DownloadUrl: '/',
   },
+  {
+    ArtsId: 2,
+    ArtsCategoryName: '대규모 마인크래프트 맵',
+    Author: 'KSW Studio',
+    ArtsName: '크라이슬러 빌딩',
+    ArtsTime: '22. 06. 23',
+    ArtsViews: 16866,
+    ArtsDetail:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum ultrices montes, phasellus. Rutrum massa pharetra nunc suspendisse augue. Nam feugiat in tempus, ut accumsan non. At donec eget aenean dui volutpat sed varius elementum.',
+    ArtsDetailImage:
+      'http://appdata.hungryapp.co.kr/data_file/data_img_m/201211/cLgXaXSe9rSOJBVF8JSx3HgE1352627247.jpg',
+    CountDownload: 7368,
+    DownloadUrl: '/',
+  },
 ];

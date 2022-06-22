@@ -55,16 +55,16 @@ const ShopDetailPage: React.FC = () => {
         <AssetDetailContent>
           <AssetIamgeDetailUl>
             <li>
-              <AssetImageDetail src="https://www.koreaminecraft.net/files/attach/images/2629848/295/079/001/248499a39fa772cefa6756161c1063bc.png" />
+              <AssetImageDetail src={data.ArtsDetailImage} />
             </li>
             <li>
-              <AssetImageDetail src="https://www.koreaminecraft.net/files/attach/images/2629848/295/079/001/248499a39fa772cefa6756161c1063bc.png" />
+              <AssetImageDetail src={data.ArtsDetailImage} />
             </li>
             <li>
-              <AssetImageDetail src="https://www.koreaminecraft.net/files/attach/images/2629848/295/079/001/248499a39fa772cefa6756161c1063bc.png" />
+              <AssetImageDetail src={data.ArtsDetailImage} />
             </li>
             <li>
-              <AssetImageDetail src="https://www.koreaminecraft.net/files/attach/images/2629848/295/079/001/248499a39fa772cefa6756161c1063bc.png" />
+              <AssetImageDetail src={data.ArtsDetailImage} />
             </li>
           </AssetIamgeDetailUl>
           <p>{data.ArtsDetail}</p>
