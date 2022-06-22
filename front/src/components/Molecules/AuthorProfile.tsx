@@ -94,6 +94,7 @@ const ProfilImage = styled.img`
 const ProfileContiner = styled.div`
   display: flex;
   flex-direction: row;
+  width: 100%;
 `;
 
 const ProfileLeft = styled.div`
@@ -105,7 +106,7 @@ const ProfileLeft = styled.div`
   span {
     margin-top: 26px;
     font-family: 'Noto Sans CJK KR';
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     line-height: normal;
     letter-spacing: -0.4px;
@@ -116,6 +117,7 @@ const ProfileLeft = styled.div`
 const ProfilRight = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
   ul {
     display: flex;
     flex-direction: row;
@@ -127,7 +129,7 @@ const ProfilRight = styled.div`
 
 const ProfileMenuText = styled.p<AuthorProps>`
   font-family: 'Noto Sans CJK KR';
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   font-weight: ${(props) => (props.AuthorDetailState ? `bold` : `500`)};
   line-height: normal;
@@ -147,7 +149,7 @@ const AuthorDetail = styled.div`
   flex-direction: column;
   span {
     font-family: 'Noto Sans CJK KR';
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: normal;
     line-height: normal;
     letter-spacing: -0.28px;
@@ -157,7 +159,7 @@ const AuthorDetail = styled.div`
   p {
     width: 652px;
     font-family: 'Noto Sans CJK KR';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: normal;

@@ -69,7 +69,7 @@ const BoxHead = styled.div`
   }
   a > p {
     font-family: 'Noto Sans CJK KR';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     letter-spacing: -0.32px;
     color: #a7a7a7;
@@ -81,7 +81,7 @@ const BoxHead = styled.div`
 
 const HeadText = styled.span`
   font-family: 'Noto Sans CJK KR';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: normal;
   letter-spacing: -0.48px;

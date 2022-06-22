@@ -83,7 +83,7 @@ const FooterHeadUl = styled.ul`
     p {
       font-family: 'Noto Sans CJK KR';
       font-weight: 500;
-      font-size: 14px;
+      font-size: 0.875rem;
       line-height: 180%;
       letter-spacing: -0.02px;
       color: #796958;
@@ -109,10 +109,10 @@ const FooterTextBox = styled.div`
   letter-spacing: -0.02em;
   p:first-of-type {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   p {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
   }
 `;
@@ -128,13 +128,13 @@ const FooterRightFooter = styled.div`
   font-family: 'Noto Sans CJK KR';
   p {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
     color: #27231f;
   }
   span {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 18px;
     color: #969696;
   }

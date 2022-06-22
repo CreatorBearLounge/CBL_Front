@@ -59,7 +59,7 @@ const AssetDownloadBtnStyle = styled.a<AssetDownloadBtnStyleProps>`
   p {
     color: ${(props) => props.textColor};
     font-family: 'Noto Sans CJK KR';
-    font-size: ${(props) => props.fontSize}px;
+    font-size: ${(props) => props.fontSize}rem;
     font-weight: 500;
     height: 24px;
     display: flex;

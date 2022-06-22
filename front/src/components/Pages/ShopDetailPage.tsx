@@ -7,19 +7,6 @@ import DetailBox from '../Organisms/DetailBox';
 import AuthorAnotherAssets from '../Molecules/AuthorAnotherAssets';
 import { Arts } from '../../common/dummy';
 
-interface shopDetailType {
-  AssetName: string;
-  AuthorName: string;
-  DownloadCount: number;
-  Menu: string;
-  Date: string;
-  Views: number;
-  ArtsDetail: string;
-  ArtsDetailImage: string;
-  DownloadUrl: string;
-}
-
-// 해당 템플릿은 데이터가 들어있다는 가정 하에 작성되었음. 수정 예정
 const ShopDetailPage: React.FC = () => {
   const { artsId } = useParams();
   const data = Arts[Number(artsId) || 0];
@@ -36,7 +23,7 @@ const ShopDetailPage: React.FC = () => {
             height={44}
             backColor="#ecd9b2"
             textColor="#796958"
-            fontSize={16}
+            fontSize={1}
             text={`${data.CountDownload}`}
             link={data.DownloadUrl}
           />
@@ -74,7 +61,7 @@ const ShopDetailPage: React.FC = () => {
             height={46}
             backColor="#ecd9b2"
             textColor="#796958"
-            fontSize={16}
+            fontSize={1}
             text="작품 다운로드"
             link={data.DownloadUrl}
           />
@@ -118,7 +105,7 @@ const AssetHeader = styled.div`
 
 const AssetNameText = styled.span`
   font-family: 'Noto Sans CJK KR';
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: -0.48px;
   color: #ecd9b2;
@@ -127,7 +114,7 @@ const AssetNameText = styled.span`
 
 const AssetAuthorText = styled.span`
   font-family: 'Noto Sans CJK KR';
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.32px;
   color: #ecd9b2;
@@ -140,7 +127,7 @@ const AssetDetailTextBox = styled.div`
   margin-top: 22px;
   p {
     font-family: 'Noto Sans CJK KR';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     color: #a7a7a7;
   }
@@ -177,7 +164,7 @@ const AssetImageDetail = styled.img`
 const AssetDetailContent = styled.div`
   > p {
     font-family: 'Noto Sans CJK KR';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: normal;
     line-height: 1.5;
     letter-spacing: normal;
@@ -195,7 +182,7 @@ const AssetDetailRight = styled.div`
   flex-direction: column;
   p {
     font-family: 'Noto Sans CJK KR';
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: normal;
     letter-spacing: -0.28px;
     color: #a7a7a7;
