@@ -5,24 +5,33 @@ import { Link } from 'react-router-dom';
 interface MenuItemAtomType {
   menuName: string;
   menuHref: string;
+  // eslint-disable-next-line react/require-default-props
+  click?: boolean;
 }
 
-const MenuItemAtom: React.FC<MenuItemAtomType> = ({ menuName, menuHref }) => {
+interface MenuItemStyle {
+  click?: boolean;
+}
+
+const MenuItemAtom: React.FC<MenuItemAtomType> = ({
+  menuName,
+  menuHref,
+  click,
+}) => {
   return (
     <Link to={menuHref}>
-      <MenuItem>{menuName}</MenuItem>
+      <MenuItem click={click}>{menuName}</MenuItem>
     </Link>
   );
 };
 
 export default MenuItemAtom;
 
-const MenuItem = styled.p`
+const MenuItem = styled.p<MenuItemStyle>`
   font-family: 'Noto Sans CJK KR';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  color: #000000;
+  font-weight: ${(props) => (props.click ? 'bold' : 'normal')};
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  color: #796958;
 `;
