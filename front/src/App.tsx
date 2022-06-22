@@ -1,14 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
-// import './app.css';
 import { GlobalStyle } from './styles/global-style';
 import Menu from './components/Organisms/Menu';
 import Nav from './components/Organisms/Nav';
 import Title from './components/Organisms/Title';
 
 const App: React.FC = () => {
-  console.log(new Date());
   return (
     <BrowserRouter>
       <GlobalStyle />
