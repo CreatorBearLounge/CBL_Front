@@ -6,6 +6,8 @@ import { GlobalStyle } from './styles/global-style';
 import Menu from './components/Organisms/Menu';
 import Nav from './components/Organisms/Nav';
 import Title from './components/Organisms/Title';
+import ShopDetailTemplate from './components/Templates/ShopDetailTemplate';
+import Footer from './components/Organisms/Footer';
 
 const App: React.FC = () => {
   return (
@@ -19,7 +21,7 @@ const App: React.FC = () => {
           </MenuPart>
           <MainPart>
             <Routes>
-              <Route path="/" element={<></>} />
+              <Route path="/" element={<ShopDetailTemplate />} />
               <Route
                 path="/bigminecraftmap"
                 element={
@@ -49,7 +51,7 @@ const App: React.FC = () => {
                 }
               />
               <Route
-                path="/soundeffectsandbackgroundmusic"
+                path="/backgroundmusic"
                 element={
                   <Title
                     menuTitle="효과음과 배경음악"
@@ -58,7 +60,7 @@ const App: React.FC = () => {
                 }
               />
               <Route
-                path="/boxelartworkandasset"
+                path="/boxelartworkobj"
                 element={
                   <Title
                     menuTitle="복쉘 아트워크와 에셋"
@@ -105,6 +107,7 @@ const App: React.FC = () => {
             </Routes>
           </MainPart>
         </HomeTemplateDiv>
+        <Footer />
       </div>
     </BrowserRouter>
   );
@@ -113,21 +116,25 @@ const App: React.FC = () => {
 export default App;
 
 const MenuPart = styled.div`
-  width: 385px;
-  height: 2032px;
-  background-color: #f6f3ec;
-  position: fixed;
+  margin-top: 112px;
+  margin-left: 143px;
 `;
 
 const MainPart = styled.div`
-  padding-left: 385px;
+  margin-left: 76px;
+  margin-right: 143px;
+  padding-top: 112px;
   width: calc(100% - 385px);
-  height: 2032px;
-  background-color: #27241f;
+  max-width: 1237px;
+  height: auto;
+  padding-bottom: 219px;
 `;
 
 const HomeTemplateDiv = styled.div`
   width: 100%;
-  padding-top: 70px;
+  padding-top: 80px;
   height: auto;
+  background-color: #27241f;
+  display: flex;
+  justify-content: center;
 `;
