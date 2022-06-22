@@ -8,6 +8,7 @@ import Nav from './components/Organisms/Nav';
 import Title from './components/Organisms/Title';
 
 const App: React.FC = () => {
+  console.log(new Date());
   return (
     <BrowserRouter>
       <GlobalStyle />
