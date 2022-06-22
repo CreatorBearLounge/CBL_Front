@@ -21,7 +21,6 @@ const Menu: React.FC = () => {
               <MenuItemAtom
                 menuName="대규모 마인크래프트 맵"
                 menuHref="bigminecraftmap"
-                click
               />
             </MenuItemLi>
             <MenuItemLi>
@@ -54,7 +53,7 @@ const Menu: React.FC = () => {
             <MenuItemLi>
               <MenuItemAtom
                 menuName="스킨 및 텍스쳐"
-                menuHref="skin and texture"
+                menuHref="skinandtexture"
               />
             </MenuItemLi>
             <MenuItemLi>
@@ -94,7 +93,7 @@ const MenuWrapper = styled.div`
 const MenuText = styled.h1`
   font-family: 'Noto Sans CJK KR';
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: normal;
   color: #796958;
   margin-bottom: 19px;
@@ -117,7 +116,7 @@ const MenuHead = styled.div`
   }
   p {
     font-family: 'Noto Sans CJK KR';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #796958;
     line-height: 1;
@@ -142,7 +141,7 @@ const MenuFooter = styled.div`
   }
   p {
     font-family: 'Noto Sans CJK KR';
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #796958;
     line-height: 1;
@@ -164,7 +163,7 @@ const MenuSearch = styled.div`
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0);
     font-family: 'Noto Sans CJK KR';
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
     text-indent: 17px;
     letter-spacing: -0.24px;
