@@ -1,19 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useParams } from 'react-router-dom';
 import AssetDownloadBtn from '../Atoms/AssetDownloadBtn';
 import AuthorProfile from '../Molecules/AuthorProfile';
 import DetailBox from '../Organisms/DetailBox';
 import AuthorAnotherAssets from '../Molecules/AuthorAnotherAssets';
+import { Arts } from '../../common/dummy';
+
+interface shopDetailType {
+  AssetName: string;
+  AuthorName: string;
+  DownloadCount: number;
+  Menu: string;
+  Date: string;
+  Views: number;
+  ArtsDetail: string;
+  ArtsDetailImage: string;
+  DownloadUrl: string;
+}
 
 // 해당 템플릿은 데이터가 들어있다는 가정 하에 작성되었음. 수정 예정
-const ShopDetailTemplate: React.FC = () => {
+const ShopDetailPage: React.FC = () => {
+  const { artsId } = useParams();
+  const data = Arts[Number(artsId) || 0];
   return (
     <>
       <AssetDetailHeader>
         <AssetHeader>
           <AssetHeaderText>
-            <AssetNameText>반 고흐 해바라기</AssetNameText>
-            <AssetAuthorText>제작 | GBF STUDIO</AssetAuthorText>
+            <AssetNameText>{data.ArtsName}</AssetNameText>
+            <AssetAuthorText>제작 | {data.Author}</AssetAuthorText>
           </AssetHeaderText>
           <AssetDownloadBtn
             width={96}
@@ -21,22 +37,20 @@ const ShopDetailTemplate: React.FC = () => {
             backColor="#ecd9b2"
             textColor="#796958"
             fontSize={16}
-            text="1364"
+            text={`${data.CountDownload}`}
+            link={data.DownloadUrl}
           />
         </AssetHeader>
         <div className="line" />
         <AssetDetailTextBox>
-          <p>대규모 마인크래프트 맵</p>
-          <p>21. 05. 30</p>
+          <p>{data.ArtsCategoryName}</p>
+          <p>{data.ArtsTime}</p>
         </AssetDetailTextBox>
       </AssetDetailHeader>
       <AssetContent>
         <AssetDetailRight>
-          <AssetIamge
-            src="https://www.koreaminecraft.net/files/attach/images/2629848/295/079/001/248499a39fa772cefa6756161c1063bc.png"
-            alt="asset"
-          />
-          <p>조회 2,364</p>
+          <AssetIamge src={data.ArtsDetailImage} alt="asset" />
+          <p>조회 {data.ArtsViews}</p>
         </AssetDetailRight>
         <AssetDetailContent>
           <AssetIamgeDetailUl>
@@ -53,18 +67,8 @@ const ShopDetailTemplate: React.FC = () => {
               <AssetImageDetail src="https://www.koreaminecraft.net/files/attach/images/2629848/295/079/001/248499a39fa772cefa6756161c1063bc.png" />
             </li>
           </AssetIamgeDetailUl>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            elementum ultrices montes, phasellus. Rutrum massa pharetra nunc
-            suspendisse augue. Nam feugiat in tempus, ut accumsan non. At donec
-            eget aenean dui volutpat sed varius elementum.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            elementum ultrices montes, phasellus. Rutrum massa pharetra nunc
-            suspendisse augue. Nam feugiat in tempus, ut accumsan non. At donec
-            eget aenean dui volutpat sed varius elementum.
-          </p>
+          <p>{data.ArtsDetail}</p>
+          <p>{data.ArtsDetail}</p>
           <AssetDownloadBtn
             width={180}
             height={46}
@@ -72,12 +76,13 @@ const ShopDetailTemplate: React.FC = () => {
             textColor="#796958"
             fontSize={16}
             text="작품 다운로드"
+            link={data.DownloadUrl}
           />
         </AssetDetailContent>
       </AssetContent>
       <div className="line" />
       <DetailBox
-        Author="GBF Studio"
+        Author={data.Author}
         title="작가의 프로필"
         link="/"
         content={<AuthorProfile />}
@@ -86,7 +91,7 @@ const ShopDetailTemplate: React.FC = () => {
       />
       <div className="line" />
       <DetailBox
-        Author="GBF Studio"
+        Author={data.Author}
         title="작가의 다른 작품"
         link="/"
         content={<AuthorAnotherAssets />}
@@ -97,7 +102,7 @@ const ShopDetailTemplate: React.FC = () => {
   );
 };
 
-export default ShopDetailTemplate;
+export default ShopDetailPage;
 
 const AssetHeaderText = styled.div`
   display: flex;

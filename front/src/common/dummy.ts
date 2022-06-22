@@ -32,3 +32,20 @@ export const anotherAssetData = [
     img: 'https://cdn.imweb.me/thumbnail/20200315/5b3e7a075d76f.jpg',
   },
 ];
+
+export const Arts = [
+  {
+    ArtsId: 1,
+    ArtsCategoryName: '대규모 마인크래프트 맵',
+    Author: 'GBF Studio',
+    ArtsName: '반 고흐 해바라기',
+    ArtsTime: '21. 05. 30',
+    ArtsViews: 2366,
+    ArtsDetail:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum ultrices montes, phasellus. Rutrum massa pharetra nunc suspendisse augue. Nam feugiat in tempus, ut accumsan non. At donec eget aenean dui volutpat sed varius elementum.',
+    ArtsDetailImage:
+      'https://www.koreaminecraft.net/files/attach/images/2629848/295/079/001/248499a39fa772cefa6756161c1063bc.png',
+    CountDownload: 1364,
+    DownloadUrl: '/',
+  },
+];

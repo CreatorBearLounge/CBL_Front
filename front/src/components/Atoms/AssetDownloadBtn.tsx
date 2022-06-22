@@ -8,6 +8,7 @@ interface AssetDownloadBtnProps {
   textColor: string;
   fontSize: number;
   text: string;
+  link: string;
 }
 
 interface AssetDownloadBtnStyleProps {
@@ -25,9 +26,11 @@ const AssetDownloadBtn: React.FC<AssetDownloadBtnProps> = ({
   textColor,
   fontSize,
   text,
+  link,
 }) => {
   return (
     <AssetDownloadBtnStyle
+      href={link}
       width={width}
       height={height}
       backColor={backColor}
@@ -42,7 +45,7 @@ const AssetDownloadBtn: React.FC<AssetDownloadBtnProps> = ({
 
 export default AssetDownloadBtn;
 
-const AssetDownloadBtnStyle = styled.div<AssetDownloadBtnStyleProps>`
+const AssetDownloadBtnStyle = styled.a<AssetDownloadBtnStyleProps>`
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
   border-radius: 4px;

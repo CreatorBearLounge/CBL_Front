@@ -103,6 +103,7 @@ const MenuText = styled.h1`
 const MenuItemLi = styled.li`
   margin-bottom: 19px;
   margin-left: 17px;
+  height: 21px;
 `;
 
 const MenuHead = styled.div`
