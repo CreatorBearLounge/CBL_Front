@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 import Menu from './components/Organisms/Menu';
 import ShopDetailPage from './components/Pages/ShopDetailPage';
-import ThumbnailList from './components/Molecule/ThumbnailList';
+import ThumbnailList from './components/Molecules/ThumbnailList';
 
 const Router: React.FC = () => {
   return (
