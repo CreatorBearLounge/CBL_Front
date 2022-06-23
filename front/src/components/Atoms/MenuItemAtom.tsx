@@ -1,28 +1,35 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { CSSProperties } from 'styled-components';
+import { Link, NavLink } from 'react-router-dom';
 
 interface MenuItemAtomType {
   menuName: string;
   menuHref: string;
 }
 
+interface MenuItemStyle {
+  isActive?: boolean;
+}
+
 const MenuItemAtom: React.FC<MenuItemAtomType> = ({ menuName, menuHref }) => {
+  const navLinkStyle = ({ isActive }: MenuItemStyle) => {
+    return {
+      fontWeight: isActive ? 'bold' : 'normal',
+    };
+  };
   return (
-    <Link to={menuHref}>
+    <NavLink to={menuHref} style={navLinkStyle}>
       <MenuItem>{menuName}</MenuItem>
-    </Link>
+    </NavLink>
   );
 };
 
 export default MenuItemAtom;
 
-const MenuItem = styled.p`
+const MenuItem = styled.p<MenuItemStyle>`
   font-family: 'Noto Sans CJK KR';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.02em;
-  color: #000000;
+  font-size: 0.875rem;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  color: #796958;
 `;

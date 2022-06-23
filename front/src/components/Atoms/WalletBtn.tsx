@@ -30,7 +30,7 @@ const WalletBtn = () => {
           'Content-Type': `application/json`,
         },
       })
-      .then((res) => {
+      .then((res: any) => {
         console.log(res);
       });
   };

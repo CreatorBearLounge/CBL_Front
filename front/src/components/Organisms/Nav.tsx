@@ -31,15 +31,15 @@ const Nav: React.FC = () => {
 export default Nav;
 
 const Header = styled.div`
+  z-index: 999;
   width: 100%;
-  height: 4.3%;
+  height: 80px;
   background-color: #ecd9b2;
   position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 19px;
 `;
 
 const MainHeaderText = styled.h1`
