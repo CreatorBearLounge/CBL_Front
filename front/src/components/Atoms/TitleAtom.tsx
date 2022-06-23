@@ -6,7 +6,7 @@ interface TitleType {
   menuContent: string;
 }
 
-const Title: React.FC<TitleType> = ({ menuTitle, menuContent }) => {
+const TitleAtom: React.FC<TitleType> = ({ menuTitle, menuContent }) => {
   return (
     <TitleBox>
       <MenuTitle>{menuTitle}</MenuTitle>
@@ -16,10 +16,10 @@ const Title: React.FC<TitleType> = ({ menuTitle, menuContent }) => {
   );
 };
 
-export default Title;
+export default TitleAtom;
 
 const TitleBox = styled.div`
-  margin-left: 100px;
+  margin-left: 20px;
 `;
 
 const MenuTitle = styled.h1`
