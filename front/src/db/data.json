@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "산",
-      "category": "대규모 마인크래프트 맵",
+      "category": "bigminecraftmap",
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "title": "사자",
-      "category": "번들 및 중규모 마인크래프트 맵",
+      "category": "bundleandmiddleminecraftmap",
       "artist": "반 고흐",
       "date": "22.07.01",
       "description": "사자의 모습입니다.",
@@ -21,7 +21,7 @@
     {
       "id": 3,
       "title": "강아지",
-      "category": "음악",
+      "category": "music",
       "artist": "홍길동",
       "date": "21.03.04",
       "description": "강아지입니다.",
@@ -30,7 +30,7 @@
     {
       "id": 4,
       "title": "캠핑",
-      "category": "배경음악",
+      "category": "soundeffectsandbackgroundmusic",
       "artist": "홍길동",
       "date": "22.05.14",
       "description": "캠핑하는 모습입니다.",

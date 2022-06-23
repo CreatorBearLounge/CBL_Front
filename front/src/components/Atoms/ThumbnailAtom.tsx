@@ -1,14 +1,20 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import dummy from '../../db/data.json';
 
-const ThumbnailAtom = () => (
-  <div>
-    {dummy.arts.map((art) => (
-      <Thumbnail src={art.thumbnail} key={art.id} alt="thumnail" />
-    ))}
-  </div>
-);
+const ThumbnailAtom = () => {
+  const { category } = useParams();
+  const categoryList = dummy.arts.filter((art) => art.category === category);
+
+  return (
+    <div>
+      {categoryList.map((art) => (
+        <Thumbnail src={art.thumbnail} key={art.id} alt="thumnail" />
+      ))}
+    </div>
+  );
+};
 
 export default ThumbnailAtom;
 
