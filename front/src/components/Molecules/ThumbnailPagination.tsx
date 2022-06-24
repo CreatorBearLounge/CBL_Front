@@ -28,18 +28,22 @@ const ThumbnailPagination = () => {
   return (
     <div>
       {displayUsers}
-      <StyledPaginateContainer>
-        <ReactPaginate
-          previousLabel="<"
-          nextLabel=">"
-          pageCount={pageCount}
-          onPageChange={changePage}
-          containerClassName="paginationBtns"
-          previousClassName="previousBtns"
-          nextLinkClassName="nextBttn"
-          activeClassName="paginationActive"
-        />
-      </StyledPaginateContainer>
+      {categoryList.length > usersPerPage ? (
+        <StyledPaginateContainer>
+          <ReactPaginate
+            previousLabel="<"
+            nextLabel=">"
+            pageCount={pageCount}
+            onPageChange={changePage}
+            containerClassName="paginationBtns"
+            previousClassName="previousBtns"
+            nextLinkClassName="nextBttn"
+            activeClassName="paginationActive"
+          />
+        </StyledPaginateContainer>
+      ) : (
+        ''
+      )}
     </div>
   );
 };
