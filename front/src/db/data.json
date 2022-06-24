@@ -7,7 +7,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 12,
@@ -16,7 +17,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 13,
@@ -25,7 +27,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 14,
@@ -34,7 +37,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 15,
@@ -43,7 +47,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 16,
@@ -52,7 +57,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 17,
@@ -61,7 +67,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 18,
@@ -70,7 +77,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 19,
@@ -79,7 +87,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 111,
@@ -88,7 +97,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 112,
@@ -97,7 +107,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 113,
@@ -106,7 +117,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 114,
@@ -115,7 +127,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 115,
@@ -124,7 +137,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 116,
@@ -133,7 +147,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 117,
@@ -142,7 +157,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 118,
@@ -151,7 +167,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
     {
       "id": 119,
@@ -160,7 +177,8 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
 
     {
@@ -170,7 +188,8 @@
       "artist": "반 고흐",
       "date": "22.07.01",
       "description": "사자의 모습입니다.",
-      "thumbnail": "/assets/lion.jpg"
+      "thumbnail": "/assets/lion.jpg",
+      "view": 1000
     },
     {
       "id": 3,
@@ -179,7 +198,8 @@
       "artist": "홍길동",
       "date": "21.03.04",
       "description": "강아지입니다.",
-      "thumbnail": "/assets/dog.jpg"
+      "thumbnail": "/assets/dog.jpg",
+      "view": 1000
     },
     {
       "id": 4,
@@ -188,7 +208,8 @@
       "artist": "홍길동",
       "date": "22.05.14",
       "description": "캠핑하는 모습입니다.",
-      "thumbnail": "/assets/tent.jpg"
+      "thumbnail": "/assets/tent.jpg",
+      "view": 1000
     }
   ]
 }
