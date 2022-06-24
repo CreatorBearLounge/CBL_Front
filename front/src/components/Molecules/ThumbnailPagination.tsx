@@ -53,7 +53,7 @@ const Thumbnail = styled.img`
   width: 230px;
   height: 230px;
   flex-grow: 0;
-  margin: 30px 2px 18.5px 20.1px;
+  margin: 0px 2px 18.5px 20.1px;
 `;
 
 const StyledPaginateContainer = styled.div`
