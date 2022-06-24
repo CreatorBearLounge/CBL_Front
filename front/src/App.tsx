@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-// import './app.css';
+import styled from 'styled-components';
 import { GlobalStyle } from './styles/global-style';
 import Nav from './components/Organisms/Nav';
 import Footer from './components/Organisms/Footer';
 import Router from './Router';
+import ShopMainPage from './components/Pages/ShopMainPage';
 
 const App: React.FC = () => {
   return (
@@ -12,7 +13,13 @@ const App: React.FC = () => {
       <GlobalStyle />
       <div className="App">
         <Nav />
-        <Router />
+        <Main>
+          <Routes>
+            <Route path="/" element={<></>} />
+            <Route path="/shop" element={<ShopMainPage />} />
+            <Route path="/shop/*" element={<Router />} />
+          </Routes>
+        </Main>
         <Footer />
       </div>
     </BrowserRouter>
@@ -20,3 +27,7 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+const Main = styled.div`
+  padding-top: 80px;
+`;
