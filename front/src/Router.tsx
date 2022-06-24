@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import styled from 'styled-components';
 import Menu from './components/Organisms/Menu';
 import ShopDetailPage from './components/Pages/ShopDetailPage';
-import ThumbnailList from './components/Molecules/ThumbnailList';
+import ShopContent from './components/Organisms/ShopContent';
 
 const Router: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const Router: React.FC = () => {
       <MainPart>
         <Routes>
           <Route path="/" element={<></>} />
-          <Route path="/:category" element={<ThumbnailList />} />
+          <Route path="/:category" element={<ShopContent />} />
           <Route path="/arts/:artsId" element={<ShopDetailPage />} />
         </Routes>
       </MainPart>

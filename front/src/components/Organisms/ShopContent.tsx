@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import ThumbnailPagination from '../Atoms/ThumbnailPagination';
-import Title from './Title';
+import ThumbnailPagination from '../Molecules/ThumbnailPagination';
+import Title from '../Molecules/Title';
 
-const ThumbnailList = () => {
+const ShopContent = () => {
   return (
     <>
       <Title />
@@ -14,7 +14,7 @@ const ThumbnailList = () => {
   );
 };
 
-export default ThumbnailList;
+export default ShopContent;
 
 const ThumbnailBox = styled.div`
   width: 1237px;
