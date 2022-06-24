@@ -1,0 +1,40 @@
+{
+  "arts": [
+    {
+      "id": 1,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg"
+    },
+    {
+      "id": 2,
+      "title": "사자",
+      "category": "bundleandmiddleminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.07.01",
+      "description": "사자의 모습입니다.",
+      "thumbnail": "/assets/lion.jpg"
+    },
+    {
+      "id": 3,
+      "title": "강아지",
+      "category": "music",
+      "artist": "홍길동",
+      "date": "21.03.04",
+      "description": "강아지입니다.",
+      "thumbnail": "/assets/dog.jpg"
+    },
+    {
+      "id": 4,
+      "title": "캠핑",
+      "category": "soundeffectsandbackgroundmusic",
+      "artist": "홍길동",
+      "date": "22.05.14",
+      "description": "캠핑하는 모습입니다.",
+      "thumbnail": "/assets/tent.jpg"
+    }
+  ]
+}
