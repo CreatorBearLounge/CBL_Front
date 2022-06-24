@@ -7,8 +7,180 @@
       "artist": "반 고흐",
       "date": "22.05.04",
       "description": "산의 모습입니다.",
-      "thumbnail": "/assets/landscape.jpg"
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
     },
+    {
+      "id": 12,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 13,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 14,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 15,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 16,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 17,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 18,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 19,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 111,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 112,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 113,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 114,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 115,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 116,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 117,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 118,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+    {
+      "id": 119,
+      "title": "산",
+      "category": "bigminecraftmap",
+      "artist": "반 고흐",
+      "date": "22.05.04",
+      "description": "산의 모습입니다.",
+      "thumbnail": "/assets/landscape.jpg",
+      "view": 1000
+    },
+
     {
       "id": 2,
       "title": "사자",
@@ -16,7 +188,8 @@
       "artist": "반 고흐",
       "date": "22.07.01",
       "description": "사자의 모습입니다.",
-      "thumbnail": "/assets/lion.jpg"
+      "thumbnail": "/assets/lion.jpg",
+      "view": 1000
     },
     {
       "id": 3,
@@ -25,7 +198,8 @@
       "artist": "홍길동",
       "date": "21.03.04",
       "description": "강아지입니다.",
-      "thumbnail": "/assets/dog.jpg"
+      "thumbnail": "/assets/dog.jpg",
+      "view": 1000
     },
     {
       "id": 4,
@@ -34,7 +208,8 @@
       "artist": "홍길동",
       "date": "22.05.14",
       "description": "캠핑하는 모습입니다.",
-      "thumbnail": "/assets/tent.jpg"
+      "thumbnail": "/assets/tent.jpg",
+      "view": 1000
     }
   ]
 }
