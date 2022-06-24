@@ -54,6 +54,6 @@ const Btn = styled.button<mbbStyle>`
     margin-right: 10px;
   }
   svg {
-    padding-bottom: 6px;
+    padding-bottom: 1px;
   }
 `;

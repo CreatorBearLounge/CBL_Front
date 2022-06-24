@@ -40,6 +40,9 @@ const Title: React.FC = () => {
   } else if (location === '/shop/viplounge') {
     menuTitle = 'VIP 라운지';
     menuContent = '5개 이상 홀더들만 다운로드 가능한 VIP 라운지 입니다.';
+  } else if (location === '/shop/thesansboxasset') {
+    menuTitle = '더 샌드박스 에셋';
+    menuContent = '샌드박스 에셋입니다.';
   }
 
   return <TitleAtom menuTitle={menuTitle} menuContent={menuContent} />;

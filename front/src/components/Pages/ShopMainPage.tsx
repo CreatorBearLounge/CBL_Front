@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import MainBlackBtn from '../Atoms/MainBlackBtn';
 import MainCategoryBox from '../Molecules/MainCategoryBox';
@@ -13,7 +14,7 @@ const ShopMainPage: React.FC = () => {
             CREATOR BEAR LOUNGE <span>SHOP</span>
           </h1>
           <p>곰돌이 아티스트들의 작품을 지금 바로 만나보세요!</p>
-          <button type="button">NFT 소개 바로가기</button>
+          <NftBtn to="/nft">NFT 소개 바로가기</NftBtn>
         </div>
       </MainHead>
       <MainContent>
@@ -29,7 +30,7 @@ const ShopMainPage: React.FC = () => {
           <li>
             <DetailBox
               title="번들 및 중규모 마인크래프트 맵"
-              link="/bigminecraftmap"
+              link="/bundleandmiddleminecraftmap"
               linkName="더보기"
               content={<MainCategoryBox />}
             />
@@ -45,7 +46,7 @@ const ShopMainPage: React.FC = () => {
           <li>
             <DetailBox
               title="배경음악"
-              link="/backgroundmusic"
+              link="/soundeffectsandbackgroundmusic"
               linkName="더보기"
               content={<MainCategoryBox />}
             />
@@ -69,7 +70,7 @@ const ShopMainPage: React.FC = () => {
           <li>
             <DetailBox
               title="복쉘 아트워크 obj"
-              link="/boxelartworkobj"
+              link="/boxelartworkandasset"
               linkName="더보기"
               content={<MainCategoryBox />}
             />
@@ -92,24 +93,24 @@ const ShopMainPage: React.FC = () => {
           </li>
           <li>
             <DetailBox
-              title="스킨 및 텍스쳐"
-              link="/skinandtexture"
-              linkName="더보기"
-              content={<MainCategoryBox />}
-            />
-          </li>
-          <li>
-            <DetailBox
-              title="플러그인 및 서버팩"
-              link="/pluginandserverpack"
-              linkName="더보기"
-              content={<MainCategoryBox />}
-            />
-          </li>
-          <li>
-            <DetailBox
               title="폰트"
               link="/font"
+              linkName="더보기"
+              content={<MainCategoryBox />}
+            />
+          </li>
+          <li>
+            <DetailBox
+              title="VIP 라운지"
+              link="/viplounge"
+              linkName="더보기"
+              content={<MainCategoryBox />}
+            />
+          </li>
+          <li>
+            <DetailBox
+              title="더 샌드박스 에셋"
+              link="/thesansboxasset"
               linkName="더보기"
               content={<MainCategoryBox />}
             />
@@ -146,7 +147,7 @@ const MainHead = styled.div`
   h1 {
     height: 74px;
     width: 693px;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: normal;
     letter-spacing: -1px;
     color: #fff;
@@ -157,24 +158,12 @@ const MainHead = styled.div`
   }
   p {
     width: 486px;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.8;
     letter-spacing: -0.48px;
     text-align: center;
     color: #fff;
     margin-bottom: 57px;
-  }
-  button {
-    cursor: pointer;
-    width: 240px;
-    height: 58.31px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #ecd9b2;
-    border-radius: 30px;
-    font-size: 1rem;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    color: #ecd9b2;
   }
   div {
     display: flex;
@@ -186,6 +175,22 @@ const MainHead = styled.div`
     width: 100%;
     height: 100%;
   }
+`;
+
+const NftBtn = styled(Link)`
+  cursor: pointer;
+  width: 240px;
+  height: 58.31px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #ecd9b2;
+  border-radius: 30px;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #ecd9b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const MainContent = styled.div`
@@ -235,7 +240,7 @@ const ShopMainBannerLeft = styled.div`
   font-family: 'Noto Sans CJK KR';
   h1 {
     margin-top: 77px;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
     letter-spacing: -0.6px;
     color: #27231f;
@@ -293,7 +298,7 @@ const ShopFooterBannerLeft = styled.div`
   font-family: 'Noto Sans CJK KR';
   margin-left: 96px;
   h1 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
     letter-spacing: -0.6px;
     color: #27231f;
