@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ThumbnailPagination from '../Molecules/ThumbnailPagination';
+import Pagination from '../Molecules/Pagination';
 import Title from '../Molecules/Title';
 
 const ShopContent = () => {
@@ -8,7 +8,7 @@ const ShopContent = () => {
     <>
       <Title />
       <ThumbnailBox>
-        <ThumbnailPagination />
+        <Pagination />
       </ThumbnailBox>
     </>
   );
