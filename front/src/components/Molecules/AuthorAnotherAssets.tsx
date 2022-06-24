@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import AuthorAnotherAsset from '../Atoms/AuthorAnotherAsset';
+import AssetThumbBox from '../Atoms/AssetThumbBox';
 import { anotherAssetData } from '../../common/dummy';
 
 const AuthorAnotherAssets: React.FC = () => {
@@ -8,7 +8,7 @@ const AuthorAnotherAssets: React.FC = () => {
     <AssetWrapper>
       {anotherAssetData.map((row) => (
         <AssetList key={row.id}>
-          <AuthorAnotherAsset image={row.img} />
+          <AssetThumbBox image={row.img} width="294" height="294" />
         </AssetList>
       ))}
     </AssetWrapper>

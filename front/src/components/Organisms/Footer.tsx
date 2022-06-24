@@ -103,7 +103,6 @@ const FooterTextBox = styled.div`
   display: flex;
   flex-direction: column;
   font-family: 'Noto Sans CJK KR';
-
   color: #969696;
   line-height: 22px;
   letter-spacing: -0.02em;
@@ -111,7 +110,8 @@ const FooterTextBox = styled.div`
     font-weight: 500;
     font-size: 0.875rem;
   }
-  p {
+  p:not(:first-of-type) {
+    width: 763px;
     font-size: 0.75rem;
     font-weight: 400;
   }
@@ -126,17 +126,23 @@ const FooterRight = styled.div`
 
 const FooterRightFooter = styled.div`
   font-family: 'Noto Sans CJK KR';
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   p {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1.25rem;
     line-height: 30px;
     color: #27231f;
+    letter-spacing: -0.4px;
+    width: 229px;
   }
   span {
     font-weight: 400;
     font-size: 0.75rem;
     line-height: 18px;
     color: #969696;
+    width: 283px;
   }
 `;
 

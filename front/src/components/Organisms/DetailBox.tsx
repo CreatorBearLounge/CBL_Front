@@ -1,12 +1,13 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 interface DetailBoxProps {
-  Author: string;
-  link: string;
+  Author?: string;
+  link?: string;
   content: React.ReactElement;
   linkName: string;
-  isLink: boolean;
   title: string;
 }
 const DetailBox: React.FC<DetailBoxProps> = ({
@@ -14,17 +15,14 @@ const DetailBox: React.FC<DetailBoxProps> = ({
   link,
   content,
   linkName,
-  isLink,
   title,
 }) => {
   return (
     <Box>
       <BoxHead>
-        <HeadText>
-          {Author} {title}
-        </HeadText>
-        {isLink && (
-          <a href={link}>
+        <HeadText>{Author ? `${Author} ${title}` : `${title}`}</HeadText>
+        {link && (
+          <Link to={`/shop${link}`}>
             <p>{linkName}</p>
             <svg
               width="24"
@@ -38,7 +36,7 @@ const DetailBox: React.FC<DetailBoxProps> = ({
                 fill="#A7A7A7"
               />
             </svg>
-          </a>
+          </Link>
         )}
       </BoxHead>
       <div>{content}</div>
@@ -52,8 +50,6 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 79px;
-  margin-bottom: 108px;
 `;
 
 const BoxHead = styled.div`

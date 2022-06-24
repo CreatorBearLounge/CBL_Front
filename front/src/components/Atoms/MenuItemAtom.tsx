@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { CSSProperties } from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 interface MenuItemAtomType {
   menuName: string;

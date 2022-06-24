@@ -68,23 +68,25 @@ const ShopDetailPage: React.FC = () => {
         </AssetDetailContent>
       </AssetContent>
       <div className="line" />
-      <DetailBox
-        Author={data.Author}
-        title="작가의 프로필"
-        link="/"
-        content={<AuthorProfile />}
-        linkName="바로가기"
-        isLink
-      />
+      <DetailContents>
+        <DetailBox
+          Author={data.Author}
+          title="작가의 프로필"
+          link="/"
+          content={<AuthorProfile />}
+          linkName="바로가기"
+        />
+      </DetailContents>
       <div className="line" />
-      <DetailBox
-        Author={data.Author}
-        title="작가의 다른 작품"
-        link="/"
-        content={<AuthorAnotherAssets />}
-        linkName="더보기"
-        isLink
-      />
+      <DetailContents>
+        <DetailBox
+          Author={data.Author}
+          title="작가의 다른 작품"
+          link="/"
+          content={<AuthorAnotherAssets />}
+          linkName="더보기"
+        />
+      </DetailContents>
     </>
   );
 };
@@ -189,4 +191,9 @@ const AssetDetailRight = styled.div`
     margin-top: 36.2px;
     margin-bottom: 66px;
   }
+`;
+
+const DetailContents = styled.div`
+  margin-top: 70px;
+  margin-bottom: 108px;
 `;
