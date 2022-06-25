@@ -2,10 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
-    .material-icons.brown {
-        color: #796958;
-    }
-
     * {
         margin: 0;
     }

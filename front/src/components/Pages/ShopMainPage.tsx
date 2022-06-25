@@ -9,6 +9,10 @@ const ShopMainPage: React.FC = () => {
   return (
     <div>
       <MainHead>
+        <img
+          src="https://static.wixstatic.com/media/19692f_596d1f14201047469c656d42b90ad255~mv2.png"
+          alt=""
+        />
         <div>
           <h1>
             CREATOR BEAR LOUNGE <span>SHOP</span>
@@ -140,10 +144,14 @@ export default ShopMainPage;
 const MainHead = styled.div`
   width: 100%;
   height: 600px;
-
-  background: url('https://pbs.twimg.com/media/EqD-bQrVoAAu98H?format=jpg&name=large')
-    no-repeat center;
-  background-size: cover;
+  overflow: hidden;
+  img {
+    width: 100%;
+    min-width: 1569px;
+    top: -200px;
+    position: fixed;
+    z-index: -99;
+  }
   h1 {
     height: 74px;
     width: 693px;
@@ -171,7 +179,7 @@ const MainHead = styled.div`
     align-items: center;
     flex-direction: column;
     font-family: 'Noto Sans CJK KR';
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
   }
@@ -197,7 +205,8 @@ const MainContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  padding-top: 80px;
+  background-color: #27241f;
 `;
 
 const CategoryUl = styled.ul`

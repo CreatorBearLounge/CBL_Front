@@ -59,8 +59,8 @@ const ShopDetailPage: React.FC = () => {
           <AssetDownloadBtn
             width={180}
             height={46}
-            backColor="#ecd9b2"
-            textColor="#796958"
+            backColor="rgba(0, 0, 0, 0);"
+            textColor="#ecd9b2;"
             fontSize={1}
             text="작품 다운로드"
             link={data.DownloadUrl}

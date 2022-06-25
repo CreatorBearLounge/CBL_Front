@@ -37,7 +37,7 @@ const AssetDownloadBtn: React.FC<AssetDownloadBtnProps> = ({
       textColor={textColor}
       fontSize={fontSize}
     >
-      <span className="material-icons brown">download</span>
+      <span className="material-icons">download</span>
       <p>{text}</p>
     </AssetDownloadBtnStyle>
   );
@@ -55,7 +55,22 @@ const AssetDownloadBtnStyle = styled.a<AssetDownloadBtnStyleProps>`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  border: 1px solid #ecd9b2;
+  box-sizing: border-box;
 
+  &:hover {
+    background-color: #ecd9b2;
+    .material-icons {
+      color: #796958;
+    }
+    p {
+      color: #796958;
+    }
+  }
+
+  .material-icons {
+    color: ${(props) => props.textColor};
+  }
   p {
     color: ${(props) => props.textColor};
     font-family: 'Noto Sans CJK KR';
