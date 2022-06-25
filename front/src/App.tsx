@@ -6,11 +6,13 @@ import Nav from './components/Organisms/Nav';
 import Footer from './components/Organisms/Footer';
 import Router from './Router';
 import ShopMainPage from './components/Pages/ShopMainPage';
+import ScrollTop from './module/ScrollTop';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <GlobalStyle />
+      <ScrollTop /> {/* 페이지 이동시 스크롤 상단 고정 */}
       <div className="App">
         <Nav />
         <Main>
