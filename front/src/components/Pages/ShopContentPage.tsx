@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import TitleAtom from '../Atoms/TitleAtom';
 import Pagination from '../Molecules/Pagination';
 
-const ShopContent: React.FC = () => {
+const ShopContentPage: React.FC = () => {
   const location = useLocation().pathname;
 
   let menuTitle = '';
@@ -56,7 +56,7 @@ const ShopContent: React.FC = () => {
   );
 };
 
-export default ShopContent;
+export default ShopContentPage;
 
 const ThumbnailBox = styled.div`
   width: 1237px;
