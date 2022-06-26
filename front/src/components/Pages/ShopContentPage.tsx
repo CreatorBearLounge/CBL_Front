@@ -1,8 +1,10 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import styled from 'styled-components';
 import TitleAtom from '../Atoms/TitleAtom';
+import Pagination from '../Molecules/Pagination';
 
-const Title: React.FC = () => {
+const ShopContentPage: React.FC = () => {
   const location = useLocation().pathname;
 
   let menuTitle = '';
@@ -44,8 +46,21 @@ const Title: React.FC = () => {
     menuTitle = '더 샌드박스 에셋';
     menuContent = '샌드박스 에셋입니다.';
   }
-
-  return <TitleAtom menuTitle={menuTitle} menuContent={menuContent} />;
+  return (
+    <>
+      <TitleAtom menuTitle={menuTitle} menuContent={menuContent} />
+      <ThumbnailBox>
+        <Pagination menuTitle={menuTitle} />
+      </ThumbnailBox>
+    </>
+  );
 };
 
-export default Title;
+export default ShopContentPage;
+
+const ThumbnailBox = styled.div`
+  width: 1237px;
+  height: 1230.5px;
+  margin: 83px 143px 60.5px 0px;
+  padding: 0 0 312.3px;
+`;
