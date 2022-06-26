@@ -19,6 +19,10 @@ const MainCategoryBox: React.FC<MainCategoryType> = ({ category }) => {
               width="311"
               height="311"
               id={el.ArtsId}
+              title={el.ArtsName}
+              author={el.Author}
+              date={el.ArtsTime}
+              views={el.ArtsViews}
             />
           </AssetList>
         ))}

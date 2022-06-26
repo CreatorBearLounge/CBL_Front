@@ -23,6 +23,10 @@ const AuthorAnotherAssets: React.FC<AuthorAssetType> = ({
               width="294"
               height="294"
               id={row.ArtsId}
+              title={row.ArtsName}
+              author={row.Author}
+              date={row.ArtsTime}
+              views={row.ArtsViews}
             />
           </AssetList>
         ))}
