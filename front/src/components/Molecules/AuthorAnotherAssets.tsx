@@ -1,16 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
 import AssetThumbBox from '../Atoms/AssetThumbBox';
-import { anotherAssetData } from '../../common/dummy';
+import { Arts } from '../../common/dummy';
 
-const AuthorAnotherAssets: React.FC = () => {
+interface AuthorAssetType {
+  author: string;
+  isProfile: boolean;
+}
+
+const AuthorAnotherAssets: React.FC<AuthorAssetType> = ({
+  author,
+  isProfile,
+}) => {
   return (
     <AssetWrapper>
-      {anotherAssetData.map((row) => (
-        <AssetList key={row.id}>
-          <AssetThumbBox image={row.img} width="294" height="294" />
-        </AssetList>
-      ))}
+      {Arts.filter((el) => el.Author === author)
+        .slice(0, isProfile ? 8 : Arts.length)
+        .map((row) => (
+          <AssetList key={row.ArtsId}>
+            <AssetThumbBox
+              image={row.ArtsDetailImage}
+              width="294"
+              height="294"
+              id={row.ArtsId}
+            />
+          </AssetList>
+        ))}
     </AssetWrapper>
   );
 };

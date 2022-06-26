@@ -28,7 +28,7 @@ const ShopMainPage: React.FC = () => {
               title="대규모 마인크래프트 맵"
               link="/bigminecraftmap"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="대규모 마인크래프트 맵" />}
             />
           </li>
           <li>
@@ -36,7 +36,9 @@ const ShopMainPage: React.FC = () => {
               title="번들 및 중규모 마인크래프트 맵"
               link="/bundleandmiddleminecraftmap"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={
+                <MainCategoryBox category="번들 및 중규모 마인크래프트 맵" />
+              }
             />
           </li>
           <li>
@@ -44,7 +46,7 @@ const ShopMainPage: React.FC = () => {
               title="음악"
               link="/music"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="음악" />}
             />
           </li>
           <li>
@@ -52,7 +54,7 @@ const ShopMainPage: React.FC = () => {
               title="배경음악"
               link="/soundeffectsandbackgroundmusic"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="배경음악" />}
             />
           </li>
         </CategoryUl>
@@ -76,7 +78,7 @@ const ShopMainPage: React.FC = () => {
               title="복쉘 아트워크 obj"
               link="/boxelartworkandasset"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="복쉘 아트워크 obj" />}
             />
           </li>
           <li>
@@ -84,7 +86,7 @@ const ShopMainPage: React.FC = () => {
               title="3D모델링"
               link="/3dmodeling"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="3D모델링" />}
             />
           </li>
           <li>
@@ -92,7 +94,7 @@ const ShopMainPage: React.FC = () => {
               title="블록벤처 모델링"
               link="/blockbenchmodeling"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="블록벤처 모델링" />}
             />
           </li>
           <li>
@@ -100,7 +102,7 @@ const ShopMainPage: React.FC = () => {
               title="폰트"
               link="/font"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="폰트" />}
             />
           </li>
           <li>
@@ -108,7 +110,7 @@ const ShopMainPage: React.FC = () => {
               title="VIP 라운지"
               link="/viplounge"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="VIP 라운지" />}
             />
           </li>
           <li>
@@ -116,7 +118,7 @@ const ShopMainPage: React.FC = () => {
               title="더 샌드박스 에셋"
               link="/thesansboxasset"
               linkName="더보기"
-              content={<MainCategoryBox />}
+              content={<MainCategoryBox category="더 샌드박스 에셋" />}
             />
           </li>
         </CategoryUl>
