@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import ReactPaginate from 'react-paginate';
 import dummy from '../../db/data.json';
 import ThumbnailAtom from '../Atoms/ThumbnailAtom';
 
-const Pagination: React.FC = () => {
-  const { category } = useParams();
-  const categoryList = dummy.arts.filter((art) => art.category === category);
+interface TitleType {
+  menuTitle: string;
+}
+
+const Pagination: React.FC<TitleType> = ({ menuTitle }) => {
+  const categoryList = dummy.arts.filter((art) => art.category === menuTitle);
 
   const [pageNumber, setPageNumber] = useState(0);
 
