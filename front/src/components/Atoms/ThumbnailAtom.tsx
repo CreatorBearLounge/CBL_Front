@@ -1,29 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 interface artType {
   art: {
-    id: number;
-    title: string;
-    category: string;
-    artist: string;
-    date: string;
-    description: string;
-    thumbnail: string;
-    view: number;
+    ArtsId: number;
+    ArtsCategoryName: string;
+    Author: string;
+    ArtsName: string;
+    ArtsTime: string;
+    ArtsViews: number;
+    ArtsDetail: string;
+    ArtsDetailImage: string;
+    CountDownload: number;
+    DownloadUrl: string;
   };
 }
 
 const ThumbnailAtom: React.FC<artType> = ({ art }) => (
   <>
-    <ThumbnailBox key={art.id}>
-      <Thumbnail src={art.thumbnail} alt="thumbnail" />
-      <ArtIntro>
+    <ThumbnailBox key={art.ArtsId}>
+      <Thumbnail src={art.ArtsDetailImage} />
+      <ArtIntro to={`/shop/arts/${art.ArtsId}`}>
         <IntroBox>
-          <ArtTitle>{art.title}</ArtTitle>
-          <Artist>제작 | {art.artist}</Artist>
+          <ArtTitle>{art.ArtsName}</ArtTitle>
+          <Artist>제작 | {art.Author}</Artist>
           <DateAndView>
-            등록일 {art.date} | 조회수 {art.view}
+            등록일 {art.ArtsTime} | 조회수 {art.ArtsViews}
           </DateAndView>
         </IntroBox>
       </ArtIntro>
@@ -40,7 +43,7 @@ const ThumbnailBox = styled.div`
   display: inline-block;
 `;
 
-const ArtIntro = styled.div`
+const ArtIntro = styled(Link)`
   width: 230px;
   height: 230px;
   flex-grow: 0;
@@ -59,9 +62,6 @@ const ArtIntro = styled.div`
 `;
 
 const Thumbnail = styled.img`
-  /* 한줄에 4개씩 배열 위해 임시 사이즈 맞춤. 추후 수정 */
-  /* width: 294px;
-  height: 294px; */
   width: 230px;
   height: 230px;
   flex-grow: 0;
