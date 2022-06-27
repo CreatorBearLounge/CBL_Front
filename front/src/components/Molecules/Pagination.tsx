@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import ReactPaginate from 'react-paginate';
-import dummy from '../../db/data.json';
+import { Arts } from '../../common/dummy';
 import ThumbnailAtom from '../Atoms/ThumbnailAtom';
 
 interface TitleType {
@@ -9,7 +9,7 @@ interface TitleType {
 }
 
 const Pagination: React.FC<TitleType> = ({ menuTitle }) => {
-  const categoryList = dummy.arts.filter((art) => art.category === menuTitle);
+  const categoryList = Arts.filter((art) => art.ArtsCategoryName === menuTitle);
 
   const [pageNumber, setPageNumber] = useState(0);
 
@@ -19,7 +19,7 @@ const Pagination: React.FC<TitleType> = ({ menuTitle }) => {
   const displayUsers = categoryList
     .slice(pagesVisited, pagesVisited + usersPerPage)
     .map((art) => {
-      return <ThumbnailAtom key={art.id} art={art} />;
+      return <ThumbnailAtom key={art.ArtsId} art={art} />;
     });
 
   const pageCount = Math.ceil(categoryList.length / usersPerPage);

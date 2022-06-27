@@ -1,35 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 interface artType {
   art: {
-    id: number;
-    title: string;
-    category: string;
-    artist: string;
-    date: string;
-    description: string;
-    thumbnail: string;
-    view: number;
+    ArtsId: number;
+    ArtsCategoryName: string;
+    Author: string;
+    ArtsName: string;
+    ArtsTime: string;
+    ArtsViews: number;
+    ArtsDetail: string;
+    ArtsDetailImage: string;
+    CountDownload: number;
+    DownloadUrl: string;
   };
 }
 
-const ThumbnailAtom: React.FC<artType> = ({ art }) => (
-  <>
-    <ThumbnailBox key={art.id}>
-      <Thumbnail src={art.thumbnail} alt="thumbnail" />
-      <ArtIntro>
-        <IntroBox>
-          <ArtTitle>{art.title}</ArtTitle>
-          <Artist>제작 | {art.artist}</Artist>
-          <DateAndView>
-            등록일 {art.date} | 조회수 {art.view}
-          </DateAndView>
-        </IntroBox>
-      </ArtIntro>
-    </ThumbnailBox>
-  </>
-);
+const ThumbnailAtom: React.FC<artType> = ({ art }) => {
+  const fontSizeStyle = {
+    fontSize: art.ArtsName.length > 10 ? '1.2rem' : '1.5rem',
+  };
+
+  return (
+    <>
+      <ThumbnailBox key={art.ArtsId}>
+        <Thumbnail src={art.ArtsDetailImage} />
+        <ArtIntro to={`/shop/arts/${art.ArtsId}`}>
+          <IntroBox>
+            <ArtTitle style={fontSizeStyle}>{art.ArtsName}</ArtTitle>
+            <Artist>제작 | {art.Author}</Artist>
+            <DateAndView>
+              등록일 {art.ArtsTime} | 조회수 {art.ArtsViews}
+            </DateAndView>
+          </IntroBox>
+        </ArtIntro>
+      </ThumbnailBox>
+    </>
+  );
+};
 
 export default ThumbnailAtom;
 
@@ -40,7 +49,7 @@ const ThumbnailBox = styled.div`
   display: inline-block;
 `;
 
-const ArtIntro = styled.div`
+const ArtIntro = styled(Link)`
   width: 230px;
   height: 230px;
   flex-grow: 0;
@@ -59,9 +68,6 @@ const ArtIntro = styled.div`
 `;
 
 const Thumbnail = styled.img`
-  /* 한줄에 4개씩 배열 위해 임시 사이즈 맞춤. 추후 수정 */
-  /* width: 294px;
-  height: 294px; */
   width: 230px;
   height: 230px;
   flex-grow: 0;
@@ -75,7 +81,7 @@ const Thumbnail = styled.img`
 
 const IntroBox = styled.div`
   padding-top: 120px;
-  margin-left: 25px;
+  margin-left: 20px;
 `;
 
 const ArtTitle = styled.h2`
@@ -83,7 +89,6 @@ const ArtTitle = styled.h2`
   height: 35px;
   flex-grow: 0;
   font-family: NotoSansCJKKR;
-  font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -98,7 +103,7 @@ const Artist = styled.p`
   height: 22.3px;
   flex-grow: 0;
   font-family: NotoSansCJKKR;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -114,7 +119,7 @@ const DateAndView = styled.p`
   flex-grow: 0;
   margin: 10.1px 24.1px 0 0;
   font-family: NotoSansCJKKR;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
