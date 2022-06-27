@@ -81,7 +81,7 @@ const Thumbnail = styled.img`
 
 const IntroBox = styled.div`
   padding-top: 120px;
-  margin-left: 25px;
+  margin-left: 20px;
 `;
 
 const ArtTitle = styled.h2`
