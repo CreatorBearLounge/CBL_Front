@@ -17,22 +17,28 @@ interface artType {
   };
 }
 
-const ThumbnailAtom: React.FC<artType> = ({ art }) => (
-  <>
-    <ThumbnailBox key={art.ArtsId}>
-      <Thumbnail src={art.ArtsDetailImage} />
-      <ArtIntro to={`/shop/arts/${art.ArtsId}`}>
-        <IntroBox>
-          <ArtTitle>{art.ArtsName}</ArtTitle>
-          <Artist>제작 | {art.Author}</Artist>
-          <DateAndView>
-            등록일 {art.ArtsTime} | 조회수 {art.ArtsViews}
-          </DateAndView>
-        </IntroBox>
-      </ArtIntro>
-    </ThumbnailBox>
-  </>
-);
+const ThumbnailAtom: React.FC<artType> = ({ art }) => {
+  const fontSizeStyle = {
+    fontSize: art.ArtsName.length > 10 ? '1.2rem' : '1.5rem',
+  };
+
+  return (
+    <>
+      <ThumbnailBox key={art.ArtsId}>
+        <Thumbnail src={art.ArtsDetailImage} />
+        <ArtIntro to={`/shop/arts/${art.ArtsId}`}>
+          <IntroBox>
+            <ArtTitle style={fontSizeStyle}>{art.ArtsName}</ArtTitle>
+            <Artist>제작 | {art.Author}</Artist>
+            <DateAndView>
+              등록일 {art.ArtsTime} | 조회수 {art.ArtsViews}
+            </DateAndView>
+          </IntroBox>
+        </ArtIntro>
+      </ThumbnailBox>
+    </>
+  );
+};
 
 export default ThumbnailAtom;
 
@@ -83,7 +89,6 @@ const ArtTitle = styled.h2`
   height: 35px;
   flex-grow: 0;
   font-family: NotoSansCJKKR;
-  font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -98,7 +103,7 @@ const Artist = styled.p`
   height: 22.3px;
   flex-grow: 0;
   font-family: NotoSansCJKKR;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -114,7 +119,7 @@ const DateAndView = styled.p`
   flex-grow: 0;
   margin: 10.1px 24.1px 0 0;
   font-family: NotoSansCJKKR;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
