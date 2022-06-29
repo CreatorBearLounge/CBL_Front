@@ -83,6 +83,39 @@ const NFTPage: React.FC = () => {
           </BenefitBoxContainer>
         </div>
       </Benefit>
+      <RodeMap>
+        <h1>
+          3D, 폰트, 플러그인, 음악 등을 결합한 올인원 메이커로 디자인 및 <br />
+          예술계의 혁신을 주도합니다.
+        </h1>
+        <TobeArtistBox>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/d2da/ca15/a5f7465f32367a8d88c5626285da91b6?Expires=1657497600&Signature=b3f~wqrCu4Vuc5J-OSHWh6U9o3h8OdjyVceqGWh1G6UYK~BKM-ZPS~2gjWoGvpBIlrmRFwagOypGzIvaxUSVRaEHPs8R8bAZwSnmI9XiKFUycwofAoeaEYF-aBN5pd2J1C9b3x7a4e1mGtBJcxCTGG6ot~DqMnE8L98ytVQNRNeJ3WjfeYFWrGLSHfFwvhvozY51qS5WD42bCfJ340Ggsy870-7EZOV5MTqgenaC9npoMkNCnv9-zXwQtYFhCOPi6Cu3NqwcA8qK1tmbX9y~UXKp3W9pXxEbL8jE26fWmWOId-jwzM9E5W49gnPPiiXiYzPRu3Eh4mUbjTcrV6EhMA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt=""
+          />
+          <div>
+            <h2>곰돌이 아티스트가 되고 싶다면?</h2>
+            <p>
+              기술과 사람으로 더 나은 세상을 만듭니다. <br />
+              크리에이터 베어 라운지는 곰돌이 아티스트(홀더)들의 창작활동을
+              지원하며 <br />
+              함께 성장해 나가는 것을 목표로 합니다.
+            </p>
+            <button type="button">
+              OPEN SEA
+              <svg
+                width="20"
+                height="11"
+                viewBox="0 0 28 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 9.5H25.5L17 1" stroke="#27231F" strokeWidth="2" />
+              </svg>
+            </button>
+          </div>
+        </TobeArtistBox>
+      </RodeMap>
     </>
   );
 };
@@ -182,4 +215,64 @@ const BenefitBoxContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+`;
+
+const RodeMap = styled.div`
+  width: 100%;
+  height: 1700px;
+  background-color: white;
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  color: #27231f;
+  h1 {
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    margin-left: 100px;
+    padding-top: 100px;
+  }
+  img {
+    width: 450px;
+    height: 400px;
+    border-radius: 16px;
+  }
+`;
+
+const TobeArtistBox = styled.div`
+  display: flex;
+  margin-left: 100px;
+  margin-top: 70px;
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+  }
+  h2 {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 74px;
+    letter-spacing: -0.02em;
+  }
+  p {
+    font-weight: 400;
+    line-height: 180%;
+  }
+  button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 150px;
+    height: 36px;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 50px;
+    margin-left: -8px;
+    svg {
+      margin-left: 20px;
+      margin-top: 2px;
+    }
+  }
 `;
