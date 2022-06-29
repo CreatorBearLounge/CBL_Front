@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NFTBenefitBox from '../Atoms/NFTBenefitBox';
+import NFTRoadMapBox from '../Atoms/NFTRoadMapBox';
 
 // 디자인 사이즈 임의 조정 -> 추후 수정 예정
 
@@ -83,7 +84,7 @@ const NFTPage: React.FC = () => {
           </BenefitBoxContainer>
         </div>
       </Benefit>
-      <RodeMap>
+      <RoadMap>
         <h1>
           3D, 폰트, 플러그인, 음악 등을 결합한 올인원 메이커로 디자인 및 <br />
           예술계의 혁신을 주도합니다.
@@ -115,7 +116,45 @@ const NFTPage: React.FC = () => {
             </button>
           </div>
         </TobeArtistBox>
-      </RodeMap>
+        <h1>Road Map</h1>
+        <span>
+          로드맵은 홀더들의 의견에 따라 유동적으로 추가 될 수 있습니다.
+        </span>
+        <RoadMapBoxes>
+          <NFTRoadMapBox
+            title="곰돌이 아티스트가 
+되고 싶다면?"
+            content="크리에이터 베어 라운지는
+곰돌이 아티스트(홀더)들의
+창작활동을 지원하며
+함께 성장해 나가는 것을 목표로 합니다."
+          />
+          <NFTRoadMapBox
+            title="곰돌이 아티스트가
+되고 싶다면?"
+            content="크리에이터 베어 라운지는
+곰돌이 아티스트(홀더)들의
+창작활동을 지원하며
+함께 성장해 나가는 것을 목표로 합니다."
+          />
+          <NFTRoadMapBox
+            title="곰돌이 아티스트가
+되고 싶다면?"
+            content="크리에이터 베어 라운지는
+곰돌이 아티스트(홀더)들의
+창작활동을 지원하며
+함께 성장해 나가는 것을 목표로 합니다."
+          />
+          <NFTRoadMapBox
+            title="곰돌이 아티스트가
+되고 싶다면?"
+            content="크리에이터 베어 라운지는
+곰돌이 아티스트(홀더)들의
+창작활동을 지원하며
+함께 성장해 나가는 것을 목표로 합니다."
+          />
+        </RoadMapBoxes>
+      </RoadMap>
     </>
   );
 };
@@ -217,9 +256,9 @@ const BenefitBoxContainer = styled.div`
   padding-top: 30px;
 `;
 
-const RodeMap = styled.div`
+const RoadMap = styled.div`
   width: 100%;
-  height: 1700px;
+  height: 1400px;
   background-color: white;
   font-family: 'Noto Sans CJK KR';
   font-style: normal;
@@ -235,6 +274,15 @@ const RodeMap = styled.div`
     width: 450px;
     height: 400px;
     border-radius: 16px;
+  }
+  span {
+    float: right;
+    margin-right: 130px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #796958;
   }
 `;
 
@@ -275,4 +323,11 @@ const TobeArtistBox = styled.div`
       margin-top: 2px;
     }
   }
+`;
+
+const RoadMapBoxes = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
 `;
