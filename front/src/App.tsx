@@ -7,6 +7,7 @@ import Footer from './components/Organisms/Footer';
 import Router from './Router';
 import ShopMainPage from './components/Pages/ShopMainPage';
 import ScrollTop from './module/ScrollTop';
+import NFTPage from './components/Pages/NFTPage';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
             <Route path="/" element={<ShopMainPage />} />
             <Route path="/shop" element={<ShopMainPage />} />
             <Route path="/shop/*" element={<Router />} />
+            <Route path="/nft" element={<NFTPage />} />
           </Routes>
         </Main>
         <Footer />
