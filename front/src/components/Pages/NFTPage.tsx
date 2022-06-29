@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import NFTBenefitBox from '../Atoms/NFTBenefitBox';
 
 // 디자인 사이즈 임의 조정 -> 추후 수정 예정
 
@@ -7,11 +8,11 @@ const NFTPage: React.FC = () => {
   return (
     <>
       <NFTHead>
+        <div />
         <img
           src="https://s3-alpha-sig.figma.com/img/49a4/0082/b88c626fdf2cc2b507becc996504b6d6?Expires=1657497600&Signature=SaEGW0Wr89dt5Vap~nGNeO8gde~~iTBGmVfzIlGJdpk2KrF-QacEjx-OiPPdUfw2rsuswYScA5NKPCJRDn55xwX4-KBlF~JLN-iaR2QqEtyoUXglCY4YLaIiN6EDEkXUuYV~kZ2UtStrJl1n19U1n-caGptAFA90sxyKp~s3JuMMVozpea2R3eMBA9fT0YKJWxKhTy5luh0KG-bF1Wn0Q79S6bxC8XedaADqea7E6C3mV8tCuTWKa5qbC3Zxy96xz44lH3gemAtQjZ2kC0tjnmrnsDmPKC5dImf1RjOghEpBV9pJlOTVMsxyxAMHeL7FfaFyXhKsEpYsH~oDKs7HpA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
           alt=""
         />
-        <div />
       </NFTHead>
       <NFTLounge>
         <LoungeIntroBox>
@@ -51,6 +52,37 @@ const NFTPage: React.FC = () => {
           />
         </LoungeBearBox>
       </NFTLounge>
+      <Benefit>
+        <img
+          src="https://s3-alpha-sig.figma.com/img/49a4/0082/b88c626fdf2cc2b507becc996504b6d6?Expires=1657497600&Signature=SaEGW0Wr89dt5Vap~nGNeO8gde~~iTBGmVfzIlGJdpk2KrF-QacEjx-OiPPdUfw2rsuswYScA5NKPCJRDn55xwX4-KBlF~JLN-iaR2QqEtyoUXglCY4YLaIiN6EDEkXUuYV~kZ2UtStrJl1n19U1n-caGptAFA90sxyKp~s3JuMMVozpea2R3eMBA9fT0YKJWxKhTy5luh0KG-bF1Wn0Q79S6bxC8XedaADqea7E6C3mV8tCuTWKa5qbC3Zxy96xz44lH3gemAtQjZ2kC0tjnmrnsDmPKC5dImf1RjOghEpBV9pJlOTVMsxyxAMHeL7FfaFyXhKsEpYsH~oDKs7HpA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt=""
+        />
+        <div>
+          <h1>곰돌이 아티스트를 위한 혜택!</h1>
+          <BenefitBoxContainer>
+            <NFTBenefitBox
+              title="라운지 재단에서 만든 저작물을 곰돌이 아티스트들의 작품에 상업적으로 자유롭게 활용 할 수 있습니다."
+              content="*SHOP페이지에서 무제한 다운로드가 가능합니다."
+            />
+            <NFTBenefitBox
+              title="주문 제작 및 외주 연결을 도와드립니다."
+              content="*홀더라면 추가 할인해택으로 주문제작 해드립니다."
+            />
+            <NFTBenefitBox
+              title="라운지 재단에서 곰돌이 아티스트들을 대상으로 툴 지원 이벤트나 공모전을 개최할 예정입니다."
+              content=""
+            />
+            <NFTBenefitBox
+              title="다양한 예술활동을 지원하기 위한 자체제작 튜토리얼과 자료들을 공유해드립니다."
+              content=""
+            />
+            <NFTBenefitBox
+              title="아티스트들에게 중요한건 바로 인지도!"
+              content="*여러분이 열심히 만든 작품이나 NFT를 공식 트위터와 SNS를 통해 홍보해드립니다."
+            />
+          </BenefitBoxContainer>
+        </div>
+      </Benefit>
     </>
   );
 };
@@ -61,22 +93,13 @@ const NFTHead = styled.div`
   width: 100%;
   height: 400px;
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
   img {
     width: 100%;
     min-width: 1569px;
     top: -400px;
     position: fixed;
     z-index: -99;
-  }
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Noto Sans CJK KR';
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
   }
 `;
 
@@ -127,4 +150,36 @@ const LoungeBearBox = styled.div`
     border-radius: 16px;
     margin-right: 20px;
   }
+`;
+
+const Benefit = styled.div`
+  width: 100%;
+  height: 770px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  img {
+    width: 100%;
+    min-width: 1569px;
+    top: -400px;
+    position: fixed;
+    z-index: -99;
+  }
+  h1 {
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 50px;
+    letter-spacing: -0.02em;
+    color: #f6f3ec;
+    text-align: center;
+    padding-top: 70px;
+  }
+`;
+
+const BenefitBoxContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
 `;
