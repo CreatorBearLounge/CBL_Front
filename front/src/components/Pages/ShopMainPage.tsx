@@ -83,18 +83,18 @@ const ShopMainPage: React.FC = () => {
           </li>
           <li>
             <DetailBox
-              title="3D모델링"
+              title="3D 모델링"
               link="/3dmodeling"
               linkName="더보기"
-              content={<MainCategoryBox category="3D모델링" />}
+              content={<MainCategoryBox category="3D 모델링" />}
             />
           </li>
           <li>
             <DetailBox
-              title="블록벤처 모델링"
+              title="블록벤치 모델링"
               link="/blockbenchmodeling"
               linkName="더보기"
-              content={<MainCategoryBox category="블록벤처 모델링" />}
+              content={<MainCategoryBox category="블록벤치 모델링" />}
             />
           </li>
           <li>

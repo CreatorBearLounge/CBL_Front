@@ -168,7 +168,7 @@ export const Arts = [
   },
   {
     ArtsId: 12,
-    ArtsCategoryName: '3D모델링',
+    ArtsCategoryName: '3D 모델링',
     Author: 'GBF Studio',
     ArtsName: '3D 여성 캐릭터',
     ArtsTime: '21. 05. 30',
@@ -181,7 +181,7 @@ export const Arts = [
   },
   {
     ArtsId: 13,
-    ArtsCategoryName: '3D모델링',
+    ArtsCategoryName: '3D 모델링',
     Author: 'GBF Studio',
     ArtsName: '3D 우물',
     ArtsTime: '21. 05. 30',
@@ -195,7 +195,7 @@ export const Arts = [
   },
   {
     ArtsId: 14,
-    ArtsCategoryName: '블록벤처 모델링',
+    ArtsCategoryName: '블록벤치 모델링',
     Author: 'GBF Studio',
     ArtsName: '거미',
     ArtsTime: '21. 05. 30',
@@ -208,7 +208,7 @@ export const Arts = [
   },
   {
     ArtsId: 15,
-    ArtsCategoryName: '블록벤처 모델링',
+    ArtsCategoryName: '블록벤치 모델링',
     Author: 'GBF Studio',
     ArtsName: '드레드',
     ArtsTime: '21. 05. 30',
