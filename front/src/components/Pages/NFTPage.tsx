@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import NFTBenefitBox from '../Atoms/NFTBenefitBox';
 import NFTRoadMapBox from '../Atoms/NFTRoadMapBox';
+import NFTCategoryBox from '../Molecules/NFTCategoryBox';
 
 // 디자인 사이즈 임의 조정 -> 추후 수정 예정
 
@@ -155,6 +156,35 @@ const NFTPage: React.FC = () => {
           />
         </RoadMapBoxes>
       </RoadMap>
+      <Shop>
+        <h1>
+          CREATOR BEAR LOUNGE <span>SHOP</span>
+        </h1>
+        <p>곰돌이 아티스트들의 작품을 지금 바로 만나보세요!</p>
+        <CategoryContainer>
+          <UpperCategoryBox>
+            <NFTCategoryBox category="대규모 마인크래프트 맵" />
+            <NFTCategoryBox category="번들 및 중규모 마인크래프트 맵" />
+            <NFTCategoryBox category="음악" />
+            <NFTCategoryBox category="배경음악" />
+            <NFTCategoryBox category="복쉘 아트워크 obj" />
+          </UpperCategoryBox>
+          <LowerCategoryBox>
+            <NFTCategoryBox category="대규모 마인크래프트 맵" />
+            <NFTCategoryBox category="번들 및 중규모 마인크래프트 맵" />
+            <NFTCategoryBox category="음악" />
+            <NFTCategoryBox category="배경음악" />
+            <NFTCategoryBox category="복쉘 아트워크 obj" />
+          </LowerCategoryBox>
+        </CategoryContainer>
+        <ShopBanner>
+          <span>💡</span>
+          <p>
+            메타버스 맵, 음악, 모델링, 폰트 등 <br />
+            다양한 자료를 무제한 다운로드 받으세요!
+          </p>
+        </ShopBanner>
+      </Shop>
     </>
   );
 };
@@ -330,4 +360,66 @@ const RoadMapBoxes = styled.div`
   flex-direction: row;
   justify-content: center;
   margin-top: 80px;
+`;
+
+const Shop = styled.div`
+  width: 100%;
+  height: 970px;
+  background: #f6f3ec;
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  color: #27231f;
+  h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 74px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding-top: 80px;
+    span {
+      font-weight: 700;
+    }
+  }
+  > p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+`;
+
+const CategoryContainer = styled.div`
+  margin-top: 80px;
+`;
+
+const UpperCategoryBox = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const LowerCategoryBox = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const ShopBanner = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 341px;
+  height: 81px;
+  background: #ffffff;
+  box-shadow: 4px 10px 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-top: 30px;
+  > span {
+    font-size: 1.6rem;
+    margin-right: 40px;
+  }
+  > p {
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #796958;
+  }
 `;
