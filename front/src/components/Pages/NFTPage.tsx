@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NFTBenefitBox from '../Atoms/NFTBenefitBox';
+import NFTFooterBanner from '../Atoms/NFTFooterBanner';
 import NFTRoadMapBox from '../Atoms/NFTRoadMapBox';
 import NFTCategoryBox from '../Molecules/NFTCategoryBox';
 
@@ -185,6 +186,18 @@ const NFTPage: React.FC = () => {
           </p>
         </ShopBanner>
       </Shop>
+      <Footer>
+        <div>
+          <NFTFooterBanner
+            title="Partners"
+            content="운영팀 및 프로젝트에 대해 더 자세하게 알고싶다면?"
+          />
+          <NFTFooterBanner
+            title="INFO"
+            content="운영팀 및 프로젝트에 대해 더 자세하게 알고싶다면?"
+          />
+        </div>
+      </Footer>
     </>
   );
 };
@@ -413,7 +426,7 @@ const ShopBanner = styled.div`
   margin-top: 30px;
   > span {
     font-size: 1.6rem;
-    margin-right: 40px;
+    margin-right: 30px;
   }
   > p {
     font-weight: 500;
@@ -421,5 +434,16 @@ const ShopBanner = styled.div`
     line-height: 150%;
     letter-spacing: -0.02em;
     color: #796958;
+  }
+`;
+
+const Footer = styled.div`
+  width: 100%;
+  height: 360px;
+  background-color: white;
+  > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 `;
