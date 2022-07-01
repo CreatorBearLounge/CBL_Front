@@ -164,18 +164,18 @@ const NFTPage: React.FC = () => {
         <p>곰돌이 아티스트들의 작품을 지금 바로 만나보세요!</p>
         <CategoryContainer>
           <UpperCategoryBox>
-            <NFTCategoryBox category="대규모 마인크래프트 맵" />
-            <NFTCategoryBox category="번들 및 중규모 마인크래프트 맵" />
-            <NFTCategoryBox category="음악" />
-            <NFTCategoryBox category="배경음악" />
-            <NFTCategoryBox category="복쉘 아트워크 obj" />
+            <NFTCategoryBox category="Special Minecraft Map" />
+            <NFTCategoryBox category="Bundle & Normal Minecraft Map" />
+            <NFTCategoryBox category="Epic Music" />
+            <NFTCategoryBox category="Sound Effect & BGM" />
+            <NFTCategoryBox category="Voxel obj file" />
           </UpperCategoryBox>
           <LowerCategoryBox>
-            <NFTCategoryBox category="대규모 마인크래프트 맵" />
-            <NFTCategoryBox category="번들 및 중규모 마인크래프트 맵" />
-            <NFTCategoryBox category="음악" />
-            <NFTCategoryBox category="배경음악" />
-            <NFTCategoryBox category="복쉘 아트워크 obj" />
+            <NFTCategoryBox category="Special Minecraft Map" />
+            <NFTCategoryBox category="Bundle & Normal Minecraft Map" />
+            <NFTCategoryBox category="Epic Music" />
+            <NFTCategoryBox category="Sound Effect & BGM" />
+            <NFTCategoryBox category="Voxel obj file" />
           </LowerCategoryBox>
         </CategoryContainer>
         <ShopBanner>
