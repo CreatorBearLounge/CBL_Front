@@ -1,7 +1,7 @@
 export const Arts = [
   {
     ArtsId: 0,
-    ArtsCategoryName: '번들 및 중규모 마인크래프트 맵',
+    ArtsCategoryName: 'Bundle & Normal Minecraft Map',
     Author: 'GBF Studio',
     ArtsName: '반 고흐 해바라기',
     ArtsTime: '21. 05. 30',
@@ -15,7 +15,7 @@ export const Arts = [
   },
   {
     ArtsId: 1,
-    ArtsCategoryName: '번들 및 중규모 마인크래프트 맵',
+    ArtsCategoryName: 'Bundle & Normal Minecraft Map',
     Author: 'KSW Studio',
     ArtsName: '크라이슬러 빌딩',
     ArtsTime: '22. 06. 23',
@@ -29,7 +29,7 @@ export const Arts = [
   },
   {
     ArtsId: 2,
-    ArtsCategoryName: '배경음악',
+    ArtsCategoryName: 'Sound Effect & BGM',
     Author: 'GBF Studio',
     ArtsName: 'GANADARA (Feat. 아이유)',
     ArtsTime: '21. 05. 30',
@@ -43,7 +43,7 @@ export const Arts = [
   },
   {
     ArtsId: 3,
-    ArtsCategoryName: '대규모 마인크래프트 맵',
+    ArtsCategoryName: 'Special Minecraft Map',
     Author: 'GBF Studio',
     ArtsName: '대규모 중세 맵',
     ArtsTime: '21. 05. 30',
@@ -57,7 +57,7 @@ export const Arts = [
   },
   {
     ArtsId: 4,
-    ArtsCategoryName: '대규모 마인크래프트 맵',
+    ArtsCategoryName: 'Special Minecraft Map',
     Author: 'GBF Studio',
     ArtsName: '반 고흐의 별이 빛나는 밤',
     ArtsTime: '21. 05. 30',
@@ -71,7 +71,7 @@ export const Arts = [
   },
   {
     ArtsId: 5,
-    ArtsCategoryName: '대규모 마인크래프트 맵',
+    ArtsCategoryName: 'Special Minecraft Map',
     Author: 'GBF Studio',
     ArtsName: '대도서관',
     ArtsTime: '21. 05. 30',
@@ -85,7 +85,7 @@ export const Arts = [
   },
   {
     ArtsId: 6,
-    ArtsCategoryName: '번들 및 중규모 마인크래프트 맵',
+    ArtsCategoryName: 'Bundle & Normal Minecraft Map',
     Author: 'GBF Studio',
     ArtsName: '에펠탑',
     ArtsTime: '21. 05. 30',
@@ -98,7 +98,7 @@ export const Arts = [
   },
   {
     ArtsId: 7,
-    ArtsCategoryName: '번들 및 중규모 마인크래프트 맵',
+    ArtsCategoryName: 'Bundle & Normal Minecraft Map',
     Author: 'GBF Studio',
     ArtsName: '메이플스토리 시간의 신전',
     ArtsTime: '21. 05. 30',
@@ -112,7 +112,7 @@ export const Arts = [
   },
   {
     ArtsId: 8,
-    ArtsCategoryName: '더 샌드박스 에셋',
+    ArtsCategoryName: 'The Sandbox Asset',
     Author: 'GBF Studio',
     ArtsName: '콜로세움',
     ArtsTime: '21. 05. 30',
@@ -126,7 +126,7 @@ export const Arts = [
   },
   {
     ArtsId: 9,
-    ArtsCategoryName: '더 샌드박스 에셋',
+    ArtsCategoryName: 'The Sandbox Asset',
     Author: 'GBF Studio',
     ArtsName: '중국풍 사원',
     ArtsTime: '21. 05. 30',
@@ -140,7 +140,7 @@ export const Arts = [
   },
   {
     ArtsId: 10,
-    ArtsCategoryName: 'VIP 라운지',
+    ArtsCategoryName: 'VIP Lounge',
     Author: 'GBF Studio',
     ArtsName: '마인크래프트 섬',
     ArtsTime: '21. 05. 30',
@@ -154,7 +154,7 @@ export const Arts = [
   },
   {
     ArtsId: 11,
-    ArtsCategoryName: 'VIP 라운지',
+    ArtsCategoryName: 'VIP Lounge',
     Author: 'GBF Studio',
     ArtsName: '긍정전 광화문',
     ArtsTime: '21. 05. 30',
@@ -168,7 +168,7 @@ export const Arts = [
   },
   {
     ArtsId: 12,
-    ArtsCategoryName: '3D 모델링',
+    ArtsCategoryName: '3D Modeling',
     Author: 'GBF Studio',
     ArtsName: '3D 여성 캐릭터',
     ArtsTime: '21. 05. 30',
@@ -181,7 +181,7 @@ export const Arts = [
   },
   {
     ArtsId: 13,
-    ArtsCategoryName: '3D 모델링',
+    ArtsCategoryName: '3D Modeling',
     Author: 'GBF Studio',
     ArtsName: '3D 우물',
     ArtsTime: '21. 05. 30',
@@ -195,7 +195,7 @@ export const Arts = [
   },
   {
     ArtsId: 14,
-    ArtsCategoryName: '블록벤치 모델링',
+    ArtsCategoryName: 'Blockbench Modeling',
     Author: 'GBF Studio',
     ArtsName: '거미',
     ArtsTime: '21. 05. 30',
@@ -208,7 +208,7 @@ export const Arts = [
   },
   {
     ArtsId: 15,
-    ArtsCategoryName: '블록벤치 모델링',
+    ArtsCategoryName: 'Blockbench Modeling',
     Author: 'GBF Studio',
     ArtsName: '드레드',
     ArtsTime: '21. 05. 30',
@@ -221,7 +221,7 @@ export const Arts = [
   },
   {
     ArtsId: 16,
-    ArtsCategoryName: '복쉘 아트워크 obj',
+    ArtsCategoryName: 'Voxel obj file',
     Author: 'GBF Studio',
     ArtsName: '초록 집',
     ArtsTime: '21. 05. 30',
@@ -235,7 +235,7 @@ export const Arts = [
   },
   {
     ArtsId: 17,
-    ArtsCategoryName: '복쉘 아트워크 obj',
+    ArtsCategoryName: 'Voxel obj file',
     Author: 'GBF Studio',
     ArtsName: '폐허가 된 도시',
     ArtsTime: '21. 05. 30',
@@ -248,7 +248,7 @@ export const Arts = [
   },
   {
     ArtsId: 18,
-    ArtsCategoryName: '폰트',
+    ArtsCategoryName: 'Font Design',
     Author: 'GBF Studio',
     ArtsName: 'Rategin Font',
     ArtsTime: '21. 05. 30',
@@ -262,7 +262,7 @@ export const Arts = [
   },
   {
     ArtsId: 19,
-    ArtsCategoryName: '폰트',
+    ArtsCategoryName: 'Font Design',
     Author: 'GBF Studio',
     ArtsName: '프리텐다드',
     ArtsTime: '21. 05. 30',
@@ -276,7 +276,7 @@ export const Arts = [
   },
   {
     ArtsId: 20,
-    ArtsCategoryName: '음악',
+    ArtsCategoryName: 'Epic Music',
     Author: 'GBF Studio',
     ArtsName: '이상주의 - Colde',
     ArtsTime: '21. 05. 30',
@@ -290,7 +290,7 @@ export const Arts = [
   },
   {
     ArtsId: 21,
-    ArtsCategoryName: '음악',
+    ArtsCategoryName: 'Epic Music',
     Author: 'GBF Studio',
     ArtsName: '12 - Beenzino',
     ArtsTime: '21. 05. 30',
@@ -304,7 +304,7 @@ export const Arts = [
   },
   {
     ArtsId: 22,
-    ArtsCategoryName: '배경음악',
+    ArtsCategoryName: 'Sound Effect & BGM',
     Author: 'GBF Studio',
     ArtsName: 'Stories - Avicii',
     ArtsTime: '21. 05. 30',

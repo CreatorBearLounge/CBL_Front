@@ -9,8 +9,22 @@ interface RoadMapBoxType {
 const NFTRoadMapBox: React.FC<RoadMapBoxType> = ({ title, content }) => (
   <RoadMapBox>
     <div>
-      <RoadMapTitle>{title}</RoadMapTitle>
-      <RoadMapContent>{content}</RoadMapContent>
+      <RoadMapTitle>
+        {title.split('\n').map((txt) => (
+          <>
+            {txt}
+            <br />
+          </>
+        ))}
+      </RoadMapTitle>
+      <RoadMapContent>
+        {content.split('\n').map((txt) => (
+          <>
+            {txt}
+            <br />
+          </>
+        ))}
+      </RoadMapContent>
     </div>
   </RoadMapBox>
 );
@@ -23,8 +37,6 @@ const RoadMapBox = styled.div`
   background: #f6f3ec;
   border-radius: 16px;
   margin-right: 30px;
-  white-space: pre-line;
-
   div {
     display: flex;
     flex-direction: column;

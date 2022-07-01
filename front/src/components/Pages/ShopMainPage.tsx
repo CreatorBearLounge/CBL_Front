@@ -25,36 +25,36 @@ const ShopMainPage: React.FC = () => {
         <CategoryUl>
           <li>
             <DetailBox
-              title="대규모 마인크래프트 맵"
-              link="/bigminecraftmap"
+              title="Special Minecraft Map"
+              link="/specialminecraftmap"
               linkName="더보기"
-              content={<MainCategoryBox category="대규모 마인크래프트 맵" />}
+              content={<MainCategoryBox category="Special Minecraft Map" />}
             />
           </li>
           <li>
             <DetailBox
-              title="번들 및 중규모 마인크래프트 맵"
-              link="/bundleandmiddleminecraftmap"
+              title="Bundle & Normal Minecraft Map"
+              link="/bundleandnormalminecraftmap"
               linkName="더보기"
               content={
-                <MainCategoryBox category="번들 및 중규모 마인크래프트 맵" />
+                <MainCategoryBox category="Bundle & Normal Minecraft Map" />
               }
             />
           </li>
           <li>
             <DetailBox
-              title="음악"
-              link="/music"
+              title="Epic Music"
+              link="/epicmusic"
               linkName="더보기"
-              content={<MainCategoryBox category="음악" />}
+              content={<MainCategoryBox category="Epic Music" />}
             />
           </li>
           <li>
             <DetailBox
-              title="배경음악"
-              link="/soundeffectsandbackgroundmusic"
+              title="Sound Effect & BGM"
+              link="/soundeffectandbgm"
               linkName="더보기"
-              content={<MainCategoryBox category="배경음악" />}
+              content={<MainCategoryBox category="Sound Effect & BGM" />}
             />
           </li>
         </CategoryUl>
@@ -75,50 +75,50 @@ const ShopMainPage: React.FC = () => {
         <CategoryUl>
           <li>
             <DetailBox
-              title="복쉘 아트워크 obj"
-              link="/boxelartworkandasset"
+              title="Voxel obj file"
+              link="/voxelobjfile"
               linkName="더보기"
-              content={<MainCategoryBox category="복쉘 아트워크 obj" />}
+              content={<MainCategoryBox category="Voxel obj file" />}
             />
           </li>
           <li>
             <DetailBox
-              title="3D 모델링"
+              title="3D Modeling"
               link="/3dmodeling"
               linkName="더보기"
-              content={<MainCategoryBox category="3D 모델링" />}
+              content={<MainCategoryBox category="3D Modeling" />}
             />
           </li>
           <li>
             <DetailBox
-              title="블록벤치 모델링"
+              title="Blockbench Modeling"
               link="/blockbenchmodeling"
               linkName="더보기"
-              content={<MainCategoryBox category="블록벤치 모델링" />}
+              content={<MainCategoryBox category="Blockbench Modeling" />}
             />
           </li>
           <li>
             <DetailBox
-              title="폰트"
-              link="/font"
+              title="Font Design"
+              link="/fontdesign"
               linkName="더보기"
-              content={<MainCategoryBox category="폰트" />}
+              content={<MainCategoryBox category="Font Design" />}
             />
           </li>
           <li>
             <DetailBox
-              title="VIP 라운지"
+              title="VIP Lounge"
               link="/viplounge"
               linkName="더보기"
-              content={<MainCategoryBox category="VIP 라운지" />}
+              content={<MainCategoryBox category="VIP Lounge" />}
             />
           </li>
           <li>
             <DetailBox
-              title="더 샌드박스 에셋"
+              title="The Sandbox Asset"
               link="/thesansboxasset"
               linkName="더보기"
-              content={<MainCategoryBox category="더 샌드박스 에셋" />}
+              content={<MainCategoryBox category="The Sandbox Asset" />}
             />
           </li>
         </CategoryUl>

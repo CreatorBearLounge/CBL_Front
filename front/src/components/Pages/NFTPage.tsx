@@ -124,36 +124,28 @@ const NFTPage: React.FC = () => {
         </span>
         <RoadMapBoxes>
           <NFTRoadMapBox
-            title="곰돌이 아티스트가 
-되고 싶다면?"
-            content="크리에이터 베어 라운지는
-곰돌이 아티스트(홀더)들의
-창작활동을 지원하며
-함께 성장해 나가는 것을 목표로 합니다."
+            title={'곰돌이 아티스트가 \n 되고 싶다면?'}
+            content={
+              '크리에이터 베어 라운지는 \n 곰돌이 아티스트(홀더)들의 \n 창작활동을 지원하며 \n 함께 성장해 나가는 것을 목표로 합니다.'
+            }
           />
           <NFTRoadMapBox
-            title="곰돌이 아티스트가
-되고 싶다면?"
-            content="크리에이터 베어 라운지는
-곰돌이 아티스트(홀더)들의
-창작활동을 지원하며
-함께 성장해 나가는 것을 목표로 합니다."
+            title={'곰돌이 아티스트가 \n 되고 싶다면?'}
+            content={
+              '크리에이터 베어 라운지는 \n 곰돌이 아티스트(홀더)들의 \n 창작활동을 지원하며 \n 함께 성장해 나가는 것을 목표로 합니다.'
+            }
           />
           <NFTRoadMapBox
-            title="곰돌이 아티스트가
-되고 싶다면?"
-            content="크리에이터 베어 라운지는
-곰돌이 아티스트(홀더)들의
-창작활동을 지원하며
-함께 성장해 나가는 것을 목표로 합니다."
+            title={'곰돌이 아티스트가 \n 되고 싶다면?'}
+            content={
+              '크리에이터 베어 라운지는 \n 곰돌이 아티스트(홀더)들의 \n 창작활동을 지원하며 \n 함께 성장해 나가는 것을 목표로 합니다.'
+            }
           />
           <NFTRoadMapBox
-            title="곰돌이 아티스트가
-되고 싶다면?"
-            content="크리에이터 베어 라운지는
-곰돌이 아티스트(홀더)들의
-창작활동을 지원하며
-함께 성장해 나가는 것을 목표로 합니다."
+            title={'곰돌이 아티스트가 \n 되고 싶다면?'}
+            content={
+              '크리에이터 베어 라운지는 \n 곰돌이 아티스트(홀더)들의 \n 창작활동을 지원하며 \n 함께 성장해 나가는 것을 목표로 합니다.'
+            }
           />
         </RoadMapBoxes>
       </RoadMap>
@@ -164,18 +156,18 @@ const NFTPage: React.FC = () => {
         <p>곰돌이 아티스트들의 작품을 지금 바로 만나보세요!</p>
         <CategoryContainer>
           <UpperCategoryBox>
-            <NFTCategoryBox category="대규모 마인크래프트 맵" />
-            <NFTCategoryBox category="번들 및 중규모 마인크래프트 맵" />
-            <NFTCategoryBox category="음악" />
-            <NFTCategoryBox category="배경음악" />
-            <NFTCategoryBox category="복쉘 아트워크 obj" />
+            <NFTCategoryBox category="Special Minecraft Map" />
+            <NFTCategoryBox category="Bundle & Normal Minecraft Map" />
+            <NFTCategoryBox category="Epic Music" />
+            <NFTCategoryBox category="Sound Effect & BGM" />
+            <NFTCategoryBox category="Voxel obj file" />
           </UpperCategoryBox>
           <LowerCategoryBox>
-            <NFTCategoryBox category="대규모 마인크래프트 맵" />
-            <NFTCategoryBox category="번들 및 중규모 마인크래프트 맵" />
-            <NFTCategoryBox category="음악" />
-            <NFTCategoryBox category="배경음악" />
-            <NFTCategoryBox category="복쉘 아트워크 obj" />
+            <NFTCategoryBox category="Special Minecraft Map" />
+            <NFTCategoryBox category="Bundle & Normal Minecraft Map" />
+            <NFTCategoryBox category="Epic Music" />
+            <NFTCategoryBox category="Sound Effect & BGM" />
+            <NFTCategoryBox category="Voxel obj file" />
           </LowerCategoryBox>
         </CategoryContainer>
         <ShopBanner>

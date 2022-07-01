@@ -19,51 +19,54 @@ const Menu: React.FC = () => {
           <ul>
             <MenuItemLi>
               <MenuItemAtom
-                menuName="대규모 마인크래프트 맵"
-                menuHref="bigminecraftmap"
+                menuName="The Sandbox Asset"
+                menuHref="thesandboxasset"
               />
             </MenuItemLi>
             <MenuItemLi>
               <MenuItemAtom
-                menuName="번들 및 중규모 마인크래프트 맵"
-                menuHref="bundleandmiddleminecraftmap"
-              />
-            </MenuItemLi>
-            <MenuItemLi>
-              <MenuItemAtom menuName="음악" menuHref="music" />
-            </MenuItemLi>
-            <MenuItemLi>
-              <MenuItemAtom
-                menuName="배경음악"
-                menuHref="soundeffectsandbackgroundmusic"
+                menuName="Special Minecraft Map"
+                menuHref="specialminecraftmap"
               />
             </MenuItemLi>
             <MenuItemLi>
               <MenuItemAtom
-                menuName="복쉘 아트워크 Obj"
-                menuHref="boxelartworkandasset"
+                menuName="Bundle & Normal Minecraft Map"
+                menuHref="bundleandnormalminecraftmap"
               />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom menuName="3D 모델링" menuHref="3dmodeling" />
+              <MenuItemAtom menuName="Epic Music" menuHref="epicmusic" />
             </MenuItemLi>
             <MenuItemLi>
               <MenuItemAtom
-                menuName="블록벤치 모델링"
+                menuName="Sound Effect & BGM"
+                menuHref="soundeffectandbgm"
+              />
+            </MenuItemLi>
+            <MenuItemLi>
+              <MenuItemAtom menuName="Voxel obj file" menuHref="voxelobjfile" />
+            </MenuItemLi>
+            <MenuItemLi>
+              <MenuItemAtom menuName="3D Modeling" menuHref="3dmodeling" />
+            </MenuItemLi>
+            <MenuItemLi>
+              <MenuItemAtom
+                menuName="Blockbench Modeling"
                 menuHref="blockbenchmodeling"
               />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom menuName="폰트" menuHref="font" />
-            </MenuItemLi>
-            <MenuItemLi>
-              <MenuItemAtom menuName="VIP 라운지" menuHref="viplounge" />
-            </MenuItemLi>
-            <MenuItemLi>
               <MenuItemAtom
-                menuName="더 샌드박스 에셋"
-                menuHref="thesansboxasset"
+                menuName="Plugin & Server Pack"
+                menuHref="pluginandserverpack"
               />
+            </MenuItemLi>
+            <MenuItemLi>
+              <MenuItemAtom menuName="Font Design" menuHref="fontdesign" />
+            </MenuItemLi>
+            <MenuItemLi>
+              <MenuItemAtom menuName="VIP Lounge" menuHref="viplounge" />
             </MenuItemLi>
           </ul>
         </MenuContent>
@@ -127,7 +130,7 @@ const MenuHead = styled.div`
 const MenuContent = styled.div`
   border-top: 1px solid #796958;
   border-bottom: 1px solid #796958;
-  height: 521px;
+  height: 541px;
 `;
 
 const MenuFooter = styled.div`
