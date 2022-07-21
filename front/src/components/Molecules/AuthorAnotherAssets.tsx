@@ -3,33 +3,45 @@ import styled from 'styled-components';
 import AssetThumbBox from '../Atoms/AssetThumbBox';
 import { Arts } from '../../common/dummy';
 
+type ArtsInterface = {
+  id: number;
+  title: string;
+  categoryId: number;
+  artistId: number;
+  date: string;
+  description: string;
+  viewCount: number;
+  downloadCount: number;
+  downloadUserId: number;
+  thumbnail: string;
+  downloadUrl: string;
+};
+
 interface AuthorAssetType {
-  author: string;
   isProfile: boolean;
+  arts: Array<ArtsInterface>;
 }
 
 const AuthorAnotherAssets: React.FC<AuthorAssetType> = ({
-  author,
   isProfile,
+  arts,
 }) => {
   return (
     <AssetWrapper>
-      {Arts.filter((el) => el.Author === author)
-        .slice(0, isProfile ? 8 : Arts.length)
-        .map((row) => (
-          <AssetList key={row.ArtsId}>
-            <AssetThumbBox
-              image={row.ArtsDetailImage}
-              width="294"
-              height="294"
-              id={row.ArtsId}
-              title={row.ArtsName}
-              author={row.Author}
-              date={row.ArtsTime}
-              views={row.ArtsViews}
-            />
-          </AssetList>
-        ))}
+      {arts.slice(0, isProfile ? 8 : Arts.length).map((row) => (
+        <AssetList key={row.id}>
+          <AssetThumbBox
+            image={row.thumbnail}
+            width="294"
+            height="294"
+            id={row.id}
+            title={row.title}
+            author={row.artistId.toString()}
+            date={row.date}
+            views={row.viewCount}
+          />
+        </AssetList>
+      ))}
     </AssetWrapper>
   );
 };

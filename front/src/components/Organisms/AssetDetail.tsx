@@ -7,7 +7,7 @@ interface AssetDetailType {
   views: number;
   detail: string;
   downloadUrl: string;
-  category: string;
+  category: number;
 }
 
 interface boxSizeStyle {
@@ -34,7 +34,7 @@ const AssetDetail: React.FC<AssetDetailType> = ({
   return (
     <AssetContent>
       <AssetDetailRight>
-        {category === '음악' || category === '배경음악' ? (
+        {category === 4 || category === 5 ? (
           <AssetMusicImage size={size}>
             <BlackBox />
             <img src={image} alt="music" />
@@ -46,12 +46,12 @@ const AssetDetail: React.FC<AssetDetailType> = ({
         )}
 
         <p>
-          조회{' '}
-          {views.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
+          조회 {views}
+          {/* {views.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}  */}
         </p>
       </AssetDetailRight>
       <AssetDetailContent>
-        {category === '음악' || category === '배경음악' ? null : (
+        {category === 4 || category === 5 ? null : (
           <AssetIamgeDetailUl>
             <li>
               <AssetImageDetail src={image} />

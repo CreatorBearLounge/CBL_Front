@@ -18,55 +18,40 @@ const Menu: React.FC = () => {
           </MenuSearch>
           <ul>
             <MenuItemLi>
-              <MenuItemAtom
-                menuName="The Sandbox Asset"
-                menuHref="thesandboxasset"
-              />
+              <MenuItemAtom menuName="The Sandbox Asset" menuHref="1" />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom
-                menuName="Special Minecraft Map"
-                menuHref="specialminecraftmap"
-              />
+              <MenuItemAtom menuName="Special Minecraft Map" menuHref="2" />
             </MenuItemLi>
             <MenuItemLi>
               <MenuItemAtom
                 menuName="Bundle & Normal Minecraft Map"
-                menuHref="bundleandnormalminecraftmap"
+                menuHref="3"
               />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom menuName="Epic Music" menuHref="epicmusic" />
+              <MenuItemAtom menuName="Epic Music" menuHref="4" />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom
-                menuName="Sound Effect & BGM"
-                menuHref="soundeffectandbgm"
-              />
+              <MenuItemAtom menuName="Sound Effect & BGM" menuHref="5" />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom menuName="Voxel obj file" menuHref="voxelobjfile" />
+              <MenuItemAtom menuName="Voxel obj file" menuHref="6" />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom menuName="3D Modeling" menuHref="3dmodeling" />
+              <MenuItemAtom menuName="3D Modeling" menuHref="7" />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom
-                menuName="Blockbench Modeling"
-                menuHref="blockbenchmodeling"
-              />
+              <MenuItemAtom menuName="Blockbench Modeling" menuHref="8" />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom
-                menuName="Plugin & Server Pack"
-                menuHref="pluginandserverpack"
-              />
+              <MenuItemAtom menuName="Plugin & Server Pack" menuHref="9" />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom menuName="Font Design" menuHref="fontdesign" />
+              <MenuItemAtom menuName="Font Design" menuHref="10" />
             </MenuItemLi>
             <MenuItemLi>
-              <MenuItemAtom menuName="VIP Lounge" menuHref="viplounge" />
+              <MenuItemAtom menuName="VIP Lounge" menuHref="11" />
             </MenuItemLi>
           </ul>
         </MenuContent>

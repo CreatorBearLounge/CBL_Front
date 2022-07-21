@@ -1,23 +1,59 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 import AssetDownloadBtn from '../Atoms/AssetDownloadBtn';
 import AuthorProfile from '../Molecules/AuthorProfile';
 import DetailBox from '../Organisms/DetailBox';
 import AuthorAnotherAssets from '../Molecules/AuthorAnotherAssets';
-import { Arts } from '../../common/dummy';
 import AssetDetail from '../Organisms/AssetDetail';
+
+type ArtsInterface = {
+  id: number;
+  title: string;
+  categoryId: number;
+  artistId: number;
+  date: string;
+  description: string;
+  viewCount: number;
+  downloadCount: number;
+  downloadUserId: number;
+  thumbnail: string;
+  downloadUrl: string;
+};
+
+type ArtistInterface = {
+  id: number;
+  name: string;
+  description: string;
+  resume: string;
+  profile: string;
+};
 
 const ShopDetailPage: React.FC = () => {
   const { artsId } = useParams();
-  const data = Arts[Number(artsId) || 0];
+  const [shopData, setShopData] = useState<ArtsInterface>(Object);
+  const [artistData, setArtistData] = useState<ArtistInterface>(Object);
+  const [artistArtsData, setArtistArtsData] = useState<ArtsInterface[]>([]);
+  const ShopDetailAxios = () => {
+    return axios.get(`http://localhost:8080/shop/arts/detail/${artsId}`);
+  };
+
+  useEffect(() => {
+    ShopDetailAxios().then((res) => {
+      setShopData(res.data[0]);
+      setArtistData(res.data[1]);
+      setArtistArtsData(res.data[2]);
+    });
+  }, []);
+
   return (
     <>
       <AssetDetailHeader>
         <AssetHeader>
           <AssetHeaderText>
-            <AssetNameText>{data.ArtsName}</AssetNameText>
-            <AssetAuthorText>제작 | {data.Author}</AssetAuthorText>
+            <AssetNameText>{shopData.title}</AssetNameText>
+            <AssetAuthorText>제작 | {artistData.name}</AssetAuthorText>
           </AssetHeaderText>
           <AssetDownloadBtn
             width={96}
@@ -25,29 +61,29 @@ const ShopDetailPage: React.FC = () => {
             backColor="#ecd9b2"
             textColor="#796958"
             fontSize={1}
-            text={`${data.CountDownload}`}
-            link={data.DownloadUrl}
+            text={`${shopData.downloadCount}`}
+            link={shopData.downloadUrl}
           />
         </AssetHeader>
         <div className="line" />
         <AssetDetailTextBox>
-          <p>{data.ArtsCategoryName}</p>
-          <p>{data.ArtsTime}</p>
+          <p>{shopData.categoryId}</p>
+          <p>{shopData.date}</p>
         </AssetDetailTextBox>
       </AssetDetailHeader>
       <AssetDetail
-        image={data.ArtsDetailImage}
-        views={data.ArtsViews}
-        detail={data.ArtsDetail}
-        downloadUrl={data.DownloadUrl}
-        category={data.ArtsCategoryName}
+        image={shopData.thumbnail}
+        views={shopData.viewCount}
+        detail={shopData.description}
+        downloadUrl={shopData.downloadUrl}
+        category={shopData.categoryId}
       />
       <div className="line" />
       <DetailContents>
         <DetailBox
-          Author={data.Author}
+          Author={artistData.name}
           title="작가의 프로필"
-          link={`/artist/${data.Author}`}
+          link={`/artist/${artistData.id}`}
           content={<AuthorProfile />}
           linkName="바로가기"
         />
@@ -55,10 +91,10 @@ const ShopDetailPage: React.FC = () => {
       <div className="line" />
       <DetailContents>
         <DetailBox
-          Author={data.Author}
+          Author={artistData.name}
           title="작가의 다른 작품"
-          link={`/artist/${data.Author}`}
-          content={<AuthorAnotherAssets author={data.Author} isProfile />}
+          link={`/artist/${artistData.id}`}
+          content={<AuthorAnotherAssets isProfile arts={artistArtsData} />}
           linkName="더보기"
         />
       </DetailContents>

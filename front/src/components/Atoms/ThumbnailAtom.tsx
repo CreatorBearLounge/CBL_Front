@@ -4,34 +4,35 @@ import { Link } from 'react-router-dom';
 
 interface artType {
   art: {
-    ArtsId: number;
-    ArtsCategoryName: string;
-    Author: string;
-    ArtsName: string;
-    ArtsTime: string;
-    ArtsViews: number;
-    ArtsDetail: string;
-    ArtsDetailImage: string;
-    CountDownload: number;
-    DownloadUrl: string;
+    id: number;
+    title: string;
+    categoryId: number;
+    artistId: number;
+    date: string;
+    description: string;
+    viewCount: number;
+    downloadCount: number;
+    downloadUserId: number;
+    thumbnail: string;
+    downloadUrl: string;
   };
 }
 
 const ThumbnailAtom: React.FC<artType> = ({ art }) => {
   const fontSizeStyle = {
-    fontSize: art.ArtsName.length > 10 ? '1.2rem' : '1.5rem',
+    fontSize: art.title.length > 10 ? '1.2rem' : '1.5rem',
   };
 
   return (
     <>
-      <ThumbnailBox key={art.ArtsId}>
-        <Thumbnail src={art.ArtsDetailImage} />
-        <ArtIntro to={`/shop/arts/${art.ArtsId}`}>
+      <ThumbnailBox key={art.id}>
+        <Thumbnail src={art.thumbnail} />
+        <ArtIntro to={`/shop/arts/${art.id}`}>
           <IntroBox>
-            <ArtTitle style={fontSizeStyle}>{art.ArtsName}</ArtTitle>
-            <Artist>제작 | {art.Author}</Artist>
+            <ArtTitle style={fontSizeStyle}>{art.title}</ArtTitle>
+            <Artist>제작 | {art.artistId}</Artist>
             <DateAndView>
-              등록일 {art.ArtsTime} | 조회수 {art.ArtsViews}
+              등록일 {art.date} | 조회수 {art.viewCount}
             </DateAndView>
           </IntroBox>
         </ArtIntro>

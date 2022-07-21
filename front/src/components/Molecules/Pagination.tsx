@@ -1,28 +1,39 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import ReactPaginate from 'react-paginate';
-import { Arts } from '../../common/dummy';
 import ThumbnailAtom from '../Atoms/ThumbnailAtom';
 
+type ArtsInterface = {
+  id: number;
+  title: string;
+  categoryId: number;
+  artistId: number;
+  date: string;
+  description: string;
+  viewCount: number;
+  downloadCount: number;
+  downloadUserId: number;
+  thumbnail: string;
+  downloadUrl: string;
+};
+
 interface TitleType {
-  menuTitle: string;
+  arts: Array<ArtsInterface>;
 }
 
-const Pagination: React.FC<TitleType> = ({ menuTitle }) => {
-  const categoryList = Arts.filter((art) => art.ArtsCategoryName === menuTitle);
-
+const Pagination: React.FC<TitleType> = ({ arts }) => {
   const [pageNumber, setPageNumber] = useState(0);
 
   const usersPerPage = 16;
   const pagesVisited = pageNumber * usersPerPage;
 
-  const displayUsers = categoryList
+  const displayUsers = arts
     .slice(pagesVisited, pagesVisited + usersPerPage)
-    .map((art) => {
-      return <ThumbnailAtom key={art.ArtsId} art={art} />;
+    .map((el) => {
+      return <ThumbnailAtom key={el.id} art={el} />;
     });
 
-  const pageCount = Math.ceil(categoryList.length / usersPerPage);
+  const pageCount = Math.ceil(arts.length / usersPerPage);
 
   const changePage = ({ selected }: never) => {
     setPageNumber(selected);
@@ -31,7 +42,7 @@ const Pagination: React.FC<TitleType> = ({ menuTitle }) => {
   return (
     <>
       {displayUsers}
-      {categoryList.length > usersPerPage ? (
+      {arts.length > usersPerPage ? (
         <StyledPaginateContainer>
           <ReactPaginate
             previousLabel="<"

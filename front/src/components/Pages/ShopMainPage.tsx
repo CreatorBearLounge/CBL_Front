@@ -25,36 +25,34 @@ const ShopMainPage: React.FC = () => {
         <CategoryUl>
           <li>
             <DetailBox
-              title="Special Minecraft Map"
-              link="/specialminecraftmap"
+              title="The Sandbox Asset"
+              link="/1"
               linkName="더보기"
-              content={<MainCategoryBox category="Special Minecraft Map" />}
+              content={<MainCategoryBox category={1} />}
+            />
+          </li>
+          <li>
+            <DetailBox
+              title="Special Minecraft Map"
+              link="/2"
+              linkName="더보기"
+              content={<MainCategoryBox category={2} />}
             />
           </li>
           <li>
             <DetailBox
               title="Bundle & Normal Minecraft Map"
-              link="/bundleandnormalminecraftmap"
+              link="/3"
               linkName="더보기"
-              content={
-                <MainCategoryBox category="Bundle & Normal Minecraft Map" />
-              }
+              content={<MainCategoryBox category={3} />}
             />
           </li>
           <li>
             <DetailBox
               title="Epic Music"
-              link="/epicmusic"
+              link="/4"
               linkName="더보기"
-              content={<MainCategoryBox category="Epic Music" />}
-            />
-          </li>
-          <li>
-            <DetailBox
-              title="Sound Effect & BGM"
-              link="/soundeffectandbgm"
-              linkName="더보기"
-              content={<MainCategoryBox category="Sound Effect & BGM" />}
+              content={<MainCategoryBox category={4} />}
             />
           </li>
         </CategoryUl>
@@ -75,50 +73,58 @@ const ShopMainPage: React.FC = () => {
         <CategoryUl>
           <li>
             <DetailBox
-              title="Voxel obj file"
-              link="/voxelobjfile"
+              title="Sound Effect & BGM"
+              link="/5"
               linkName="더보기"
-              content={<MainCategoryBox category="Voxel obj file" />}
+              content={<MainCategoryBox category={5} />}
+            />
+          </li>
+          <li>
+            <DetailBox
+              title="Voxel obj file"
+              link="/6"
+              linkName="더보기"
+              content={<MainCategoryBox category={6} />}
             />
           </li>
           <li>
             <DetailBox
               title="3D Modeling"
-              link="/3dmodeling"
+              link="/7"
               linkName="더보기"
-              content={<MainCategoryBox category="3D Modeling" />}
+              content={<MainCategoryBox category={7} />}
             />
           </li>
           <li>
             <DetailBox
               title="Blockbench Modeling"
-              link="/blockbenchmodeling"
+              link="/8"
               linkName="더보기"
-              content={<MainCategoryBox category="Blockbench Modeling" />}
+              content={<MainCategoryBox category={8} />}
+            />
+          </li>
+          <li>
+            <DetailBox
+              title="PlugIn & Server Pack"
+              link="/9"
+              linkName="더보기"
+              content={<MainCategoryBox category={9} />}
             />
           </li>
           <li>
             <DetailBox
               title="Font Design"
-              link="/fontdesign"
+              link="/10"
               linkName="더보기"
-              content={<MainCategoryBox category="Font Design" />}
+              content={<MainCategoryBox category={10} />}
             />
           </li>
           <li>
             <DetailBox
               title="VIP Lounge"
-              link="/viplounge"
+              link="/11"
               linkName="더보기"
-              content={<MainCategoryBox category="VIP Lounge" />}
-            />
-          </li>
-          <li>
-            <DetailBox
-              title="The Sandbox Asset"
-              link="/thesansboxasset"
-              linkName="더보기"
-              content={<MainCategoryBox category="The Sandbox Asset" />}
+              content={<MainCategoryBox category={11} />}
             />
           </li>
         </CategoryUl>

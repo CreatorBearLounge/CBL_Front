@@ -12,10 +12,7 @@ const Router: React.FC = () => {
         <Route path="" element={<></>} />
         <Route path=":category" element={<ShopContentPage />} />
         <Route path="arts/:artsId" element={<ShopDetailPage />} />
-        <Route
-          path="artist/:artistId"
-          element={<AuthorProfilePage author="GBF Studio" />}
-        />
+        <Route path="artist/:artistId" element={<AuthorProfilePage />} />
       </Routes>
     </LeftMenuPageTemplate>
   );
